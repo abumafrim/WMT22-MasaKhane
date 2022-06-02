@@ -3,3 +3,13 @@ datasets == 1.0.1
 gputil
 psutil
 humanize
+torch
+matplotlib
+numpy
+pandas
+psutil
+humanize
+GPUtil
+argparse
+scipy
+sklearn
