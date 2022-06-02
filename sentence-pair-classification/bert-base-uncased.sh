@@ -3,13 +3,13 @@ export MODEL=bert-base-uncased
 export TRAIN_DATA=data/en-hau/spc-en_hau_train.tsv
 export VAL_DATA=data/en-hau/spc-en_hau_dev.tsv
 export TEST_DATA=data/en-hau/spc-en_hau_test.tsv
-export BATCH_SIZE=32
+export BATCH_SIZE=16
 export NUM_EPOCHS=2
 export LEARNING_RATE=2e-5
 export FREEZE_BERT=False
 export ITERS_TO_ACCUMULATE=2
 export PRED_THRESHOLD=0.5
-export SEED=2
+export SEED=1
 
 python3 run-sp-class.py \
     --train \
