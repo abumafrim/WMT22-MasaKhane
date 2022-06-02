@@ -329,7 +329,6 @@ if __name__ == "__main__":
 
   df_train = pd.read_csv(args.train_data, sep='\t')
   df_val = pd.read_csv(args.val_data, sep='\t')
-  df_test = pd.read_csv(args.test_data, sep='\t')
 
   # Creating instances of training and validation set
   print("Reading training data...")
