@@ -1,6 +1,5 @@
 export MAX_LENGTH=128
 export MODEL=bert-base-uncased
-export OUTPUT_DIR=pt2_mbert
 export TRAIN_DATA=data/en-hau/spc-en_hau_train.tsv
 export VAL_DATA=data/en-hau/spc-en_hau_dev.tsv
 export TEST_DATA=data/en-hau/spc-en_hau_test.tsv
