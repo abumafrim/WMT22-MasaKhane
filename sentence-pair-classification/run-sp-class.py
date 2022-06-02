@@ -81,7 +81,8 @@ os.environ["TOKENIZERS_PARALLELISM"] = "false"
 
 # Check that we are using 100% of GPU memory footprint support libraries/code
 # from https://github.com/patrickvonplaten/notebooks/blob/master/PyTorch_Reformer.ipynb
-!ln -sf /opt/bin/nvidia-smi /usr/bin/nvidia-smi
+
+os.system("ln -sf /opt/bin/nvidia-smi /usr/bin/nvidia-smi")
 
 GPUs = GPU.getGPUs()
 # XXX: only one GPU on Colab and isn’t guaranteed
@@ -261,9 +262,6 @@ def evaluate_loss(net, device, criterion, dataloader):
 
     return mean_loss / count
 
-print("Creation of the models' folder...")
-!mkdir models
-
 """Link for mixed precision training, gradient scaling and gradient accumulation  : https://pytorch.org/docs/stable/notes/amp_examples.html#amp-examples
 
 If you would like to learn more about Training Neural Nets on Larger Batches, I suggest reading this post of Thomas Wolf :
@@ -348,6 +346,8 @@ def train_bert(net, criterion, opti, lr, lr_scheduler, train_loader, val_loader,
     del loss
     torch.cuda.empty_cache()
 
+    return path_to_model
+
 def get_probs_from_logits(logits):
     """
     Converts a tensor of logits into an array of probabilities by applying the sigmoid function
@@ -381,145 +381,135 @@ def test_prediction(net, device, dataloader, with_labels=True, result_file="resu
     w.close()
 
 def validate_datafile(astring):
-    if not astring.endswith('.tsv'):
-        raise argparse.ArgumentTypeError("%s: is an invalid file, provide a tsv." % value)
-    return astring
+  if not astring.endswith('.tsv'):
+    raise argparse.ArgumentTypeError("%s: is an invalid file, provide a tsv." % value)
+  return astring
 
 
 if __name__ == "__main__":
     
-    parser = ArgumentParser(description="Sentence-Pair Classification using ALBERT", formatter_class=ArgumentDefaultsHelpFormatter)
-    
-    group = parser.add_mutually_exclusive_group()
-    group.add_argument("--train", action='store_true')
-    group.add_argument("--predict", action='store_true')
-    parser.add_argument("--eval", default=False)
+  parser = ArgumentParser(description="Sentence-Pair Classification using ALBERT", formatter_class=ArgumentDefaultsHelpFormatter)
+  
+  #group = parser.add_mutually_exclusive_group()
+  parser.add_argument("--train", action='store_true')
+  #parser.add_argument("--predict", action='store_true')
+  parser.add_argument("--eval", default=False)
 
-    parser.add_argument("model", type=str, default='albert-base-v2', help="model to finetune: 'albert-base-v2', 'albert-large-v2', 'albert-xlarge-v2', 'albert-xxlarge-v2', 'bert-base-uncased', ...")
-    parser.add_argument("train_data", type=validate_datafile, help="path to training dataset")
-    parser.add_argument("val_data", type=validate_datafile, help="path to validation dataset")
-    parser.add_argument("test_data", type=validate_datafile, help="path to test dataset")
-    parser.add_argument("-f", "--freeze_bert", default=False, help="if True, freeze the encoder weights and only update the classification layer weights")
-    parser.add_argument("-l", "--maxlen", type=int, default=128, help="maximum length of the tokenized input sentence pair: if greater than 'maxlen', the input is truncated and else if smaller, the input is padded")
-    parser.add_argument("-b", "--batch_size", type=int, default=16, help="batch size")
-    parser.add_argument("-i", "--iters_to_accumulate", type=int, default=2, help="the gradient accumulation adds gradients over an effective batch of size : bs * iters_to_accumulate. If set to '1', you get the usual batch size")
-    parser.add_argument("-lr", "learning_rate", default=2e-5, help="learning rate")
-    parser.add_argument("-n", "--epochs", type=int, default=4, help="number of training epochs")
-    parser.add_argument("-s", "--seeds", type=int, default=1, help="seeds")
-    parser.add_argument("-t", "--pred_threshold", default=0.5, help="prediction threshold")
-    
-    
-    args = parser.parse_args()
+  parser.add_argument("model", type=str, default='albert-base-v2', help="model to finetune: 'albert-base-v2', 'albert-large-v2', 'albert-xlarge-v2', 'albert-xxlarge-v2', 'bert-base-uncased', ...")
+  parser.add_argument("train_data", type=validate_datafile, help="path to training dataset")
+  parser.add_argument("val_data", type=validate_datafile, help="path to validation dataset")
+  parser.add_argument("test_data", type=validate_datafile, help="path to test dataset")
+  parser.add_argument("-f", "--freeze_bert", default=False, help="if True, freeze the encoder weights and only update the classification layer weights")
+  parser.add_argument("-l", "--maxlen", type=int, default=128, help="maximum length of the tokenized input sentence pair: if greater than 'maxlen', the input is truncated and else if smaller, the input is padded")
+  parser.add_argument("-b", "--batch_size", type=int, default=16, help="batch size")
+  parser.add_argument("-i", "--iters_to_accumulate", type=int, default=2, help="the gradient accumulation adds gradients over an effective batch of size : bs * iters_to_accumulate. If set to '1', you get the usual batch size")
+  parser.add_argument("-lr", "--learning_rate", type=float, default=2e-5, help="learning rate")
+  parser.add_argument("-n", "--epochs", type=int, default=4, help="number of training epochs")
+  parser.add_argument("-s", "--seed", type=int, default=1, help="seeds")
+  parser.add_argument("-t", "--pred_threshold", default=0.5, help="prediction threshold")
+      
+  args = parser.parse_args()
 
-    if args.train:
-    
-        bert_model = args.model
-        freeze_bert = args.freeze_bert
-        maxlen = args.maxlen
-        bs = args.batch_size
-        iters_to_accumulate = args.iters_to_accumulate
-        lr = args.learning_rate
-        epochs = args.epochs
+  if not os.path.exists('models'):
+    print("Creation of the models' folder...")
+    os.system("mkdir models")
 
-        #  Set all seeds to make reproducible results
-        set_seed(args.seed)
+  bert_model = args.model
+  freeze_bert = args.freeze_bert
+  maxlen = args.maxlen
+  bs = args.batch_size
+  iters_to_accumulate = args.iters_to_accumulate
+  lr = args.learning_rate
+  epochs = args.epochs
 
-        df_train = pd.read_csv(args.train_data)
-        df_val = pd.read_csv(args.val_data)
-        df_test = pd.read_csv(args.test_data)
+  #  Set all seeds to make reproducible results
+  set_seed(args.seed)
 
-        # Creating instances of training and validation set
-        print("Reading training data...")
-        train_set = CustomDataset(df_train, maxlen, bert_model)
+  df_train = pd.read_csv(args.train_data, sep='\t')
+  df_val = pd.read_csv(args.val_data, sep='\t')
+  df_test = pd.read_csv(args.test_data, sep='\t')
 
-        print("Reading validation data...")
-        val_set = CustomDataset(df_val, maxlen, bert_model)
+  # Creating instances of training and validation set
+  print("Reading training data...")
+  train_set = CustomDataset(df_train, maxlen, bert_model)
 
-        # Creating instances of training and validation dataloaders
-        train_loader = DataLoader(train_set, batch_size=bs, num_workers=5)
-        val_loader = DataLoader(val_set, batch_size=bs, num_workers=5)
+  print("Reading validation data...")
+  val_set = CustomDataset(df_val, maxlen, bert_model)
+
+  # Creating instances of training and validation dataloaders
+  train_loader = DataLoader(train_set, batch_size=bs, num_workers=5)
+  val_loader = DataLoader(val_set, batch_size=bs, num_workers=5)
 
 
-        device = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
-        net = SentencePairClassifier(bert_model, freeze_bert=freeze_bert)
+  device = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
+  net = SentencePairClassifier(bert_model, freeze_bert=freeze_bert)
 
-        if torch.cuda.device_count() > 1:  # if multiple GPUs
-            print("Let's use", torch.cuda.device_count(), "GPUs!")
-            net = nn.DataParallel(net)
+  if torch.cuda.device_count() > 1:  # if multiple GPUs
+      print("Let's use", torch.cuda.device_count(), "GPUs!")
+      net = nn.DataParallel(net)
 
-        net.to(device)
+  net.to(device)
 
-        criterion = nn.BCEWithLogitsLoss()
-        opti = AdamW(net.parameters(), lr=lr, weight_decay=1e-2)
-        num_warmup_steps = 0 # The number of steps for the warmup phase.
-        num_training_steps = epochs * len(train_loader)  # The total number of training steps
-        t_total = (len(train_loader) // iters_to_accumulate) * epochs  # Necessary to take into account Gradient accumulation
-        lr_scheduler = get_linear_schedule_with_warmup(optimizer=opti, num_warmup_steps=num_warmup_steps, num_training_steps=t_total)
+  criterion = nn.BCEWithLogitsLoss()
+  opti = AdamW(net.parameters(), lr=lr, weight_decay=1e-2)
+  num_warmup_steps = 0 # The number of steps for the warmup phase.
+  num_training_steps = epochs * len(train_loader)  # The total number of training steps
+  t_total = (len(train_loader) // iters_to_accumulate) * epochs  # Necessary to take into account Gradient accumulation
+  lr_scheduler = get_linear_schedule_with_warmup(optimizer=opti, num_warmup_steps=num_warmup_steps, num_training_steps=t_total)
 
-        train_bert(net, criterion, opti, lr, lr_scheduler, train_loader, val_loader, epochs, iters_to_accumulate)
+  path_to_model = train_bert(net, criterion, opti, lr, lr_scheduler, train_loader, val_loader, epochs, iters_to_accumulate)
 
-        """You can download the model saved in the folder "models" by browsing the files on the left of the colab notebook"""
+  """You can download the model saved in the folder "models" by browsing the files on the left of the colab notebook"""
 
-        # If you encounter a CUDA out of memory error: 
-        # - uncomment the kill command, run the "kill" command (and comment it)
-        # - reduce the batch size
-        # - then run all cells from the begining 
+  # If you encounter a CUDA out of memory error: 
+  # - uncomment the kill command, run the "kill" command (and comment it)
+  # - reduce the batch size
+  # - then run all cells from the begining 
 
-        # If you get an ugly print of tqdm (all iterations are showed), follow the above first and last steps
+  # If you get an ugly print of tqdm (all iterations are showed), follow the above first and last steps
 
-        printm()
-        # !kill -9 -1
+  printm()
+  # !kill -9 -1
 
-    elif args.predict:
+  if args.eval:
 
-        print("Creation of the results' folder...")
-        !mkdir results
+    if not os.path.exists('results'):
+      print("Creation of the results' folder...")
+      os.system("mkdir results")
 
-        path_to_model = ""
+    #path_to_model = '/content/models/albert-base-v2_lr_2e-05_val_loss_0.35007_ep_3.pt'
 
-        for filename in glob.glob(os.path.join('models/', '*.pt')):
-            if filename.startswith(args.model):
-                path_to_model = filename
+    path_to_output_file = 'results/output.txt'
 
-        if not path_to_model == "":
+    df_test = pd.read_csv(args.test_data, sep='\t')
 
-            #path_to_model = '/content/models/albert-base-v2_lr_2e-05_val_loss_0.35007_ep_3.pt'
+    print("Reading test data...")
+    test_set = CustomDataset(df_test, maxlen, bert_model)
+    test_loader = DataLoader(test_set, batch_size=bs, num_workers=5)
 
-            path_to_output_file = 'results/output.txt'
+    model = SentencePairClassifier(bert_model)
+    if torch.cuda.device_count() > 1:  # if multiple GPUs
+        print("Let's use", torch.cuda.device_count(), "GPUs!")
+        model = nn.DataParallel(model)
 
-            df_test = pd.read_csv(args.test)
+    print()
+    print("Loading the weights of the model...")
+    model.load_state_dict(torch.load(path_to_model))
+    model.to(device)
 
-            print("Reading test data...")
-            test_set = CustomDataset(df_test, maxlen, bert_model)
-            test_loader = DataLoader(test_set, batch_size=bs, num_workers=5)
+    print("Predicting on test data...")
+    test_prediction(net=model, device=device, dataloader=test_loader, with_labels=True, result_file=path_to_output_file)
+    # set the with_labels parameter to False if your want to get predictions on a dataset without labels
 
-            model = SentencePairClassifier(bert_model)
-            if torch.cuda.device_count() > 1:  # if multiple GPUs
-                print("Let's use", torch.cuda.device_count(), "GPUs!")
-                model = nn.DataParallel(model)
+    print("\nPredictions are available in : {}".format(path_to_output_file))
 
-            print()
-            print("Loading the weights of the model...")
-            model.load_state_dict(torch.load(path_to_model))
-            model.to(device)
+    labels_test = df_test['label']  # true labels
 
-            print("Predicting on test data...")
-            test_prediction(net=model, device=device, dataloader=test_loader, with_labels=True, result_file=path_to_output_file)
-            # set the with_labels parameter to False if your want to get predictions on a dataset without labels
+    probs_test = pd.read_csv(path_to_output_file, header=None)[0]  # prediction probabilities
+    threshold = args.pred_threshold   # you can adjust this threshold for your own dataset
+    preds_test=(probs_test>=threshold).astype('uint8') # predicted labels using the above fixed threshold
 
-            print("\nPredictions are available in : {}".format(path_to_output_file))
+    metric = load_metric("glue", "mrpc")
 
-            if args.eval:
-
-                labels_test = df_test['label']  # true labels
-
-                probs_test = pd.read_csv(path_to_output_file, header=None)[0]  # prediction probabilities
-                threshold = args.pred_threshold   # you can adjust this threshold for your own dataset
-                preds_test=(probs_test>=threshold).astype('uint8') # predicted labels using the above fixed threshold
-
-                metric = load_metric("glue", "mrpc")
-
-                metric._compute(predictions=preds_test, references=labels_test)
-
-        else:
-            print("Could not locate model to do predictions.")
+    print()
+    print(metric._compute(predictions=preds_test, references=labels_test))
