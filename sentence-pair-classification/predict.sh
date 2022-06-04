@@ -1,8 +1,7 @@
 export MODEL=albert-base-v2
-export MODEL_PATH=models/albert-base-v2_lr_2e-05_val_loss_0.15311_ep_1.pt
+export MODEL_PATH=models/albert-base-v2_lr_2e-05_val_loss_0.63068_ep_4.pt
 export DATA_PATH=data/en-hau/spc-en_hau_10000_to_pred.tsv
 export OUTPUT_PATH=results/
-export BATCH_SIZE=32
 export PRED_THRESHOLD=0.5
 
 python3 predict.py \

@@ -172,7 +172,7 @@ If you would like to learn more about Training Neural Nets on Larger Batches, I 
 https://medium.com/huggingface/training-larger-batches-practical-tips-on-1-gpu-multi-gpu-distributed-setups-ec88c3e51255
 """
 
-def train_bert(net, criterion, opti, lr, lr_scheduler, train_loader, val_loader, epochs, iters_to_accumulate):
+def train_bert(model_path, net, criterion, opti, lr, lr_scheduler, train_loader, val_loader, epochs, iters_to_accumulate):
 
     best_loss = np.Inf
     best_ep = 1
@@ -243,7 +243,7 @@ def train_bert(net, criterion, opti, lr, lr_scheduler, train_loader, val_loader,
             best_ep = ep + 1
 
     # Saving the model
-    path_to_model='models/{}_lr_{}_val_loss_{}_ep_{}.pt'.format(bert_model, lr, round(best_loss, 5), best_ep)
+    path_to_model=model_path + '/{}_lr_{}_val_loss_{}_ep_{}.pt'.format(bert_model, lr, round(best_loss, 5), best_ep)
     torch.save(net_copy.state_dict(), path_to_model)
     print("The model has been saved in {}".format(path_to_model))
 
@@ -298,6 +298,7 @@ if __name__ == "__main__":
   parser.add_argument("--eval", default=False)
 
   parser.add_argument("--model", type=str, default='albert-base-v2', help="model to finetune: 'albert-base-v2', 'albert-large-v2', 'albert-xlarge-v2', 'albert-xxlarge-v2', 'bert-base-uncased', ...")
+  parser.add_argument("--model_path", type=str, default='models', help="directory for saving model")
   parser.add_argument("--train_data", type=validate_datafile, help="path to training dataset")
   parser.add_argument("--val_data", type=validate_datafile, help="path to validation dataset")
   parser.add_argument("--test_data", type=validate_datafile, help="path to test dataset")
@@ -314,7 +315,7 @@ if __name__ == "__main__":
 
   if not os.path.exists('models'):
     print("Creation of the models' folder...")
-    os.system("mkdir models")
+    os.system("mkdir " + args.model_path)
 
   bert_model = args.model
   freeze_bert = args.freeze_bert
@@ -358,7 +359,7 @@ if __name__ == "__main__":
   t_total = (len(train_loader) // iters_to_accumulate) * epochs  # Necessary to take into account Gradient accumulation
   lr_scheduler = get_linear_schedule_with_warmup(optimizer=opti, num_warmup_steps=num_warmup_steps, num_training_steps=t_total)
 
-  path_to_model = train_bert(net, criterion, opti, lr, lr_scheduler, train_loader, val_loader, epochs, iters_to_accumulate)
+  path_to_model = train_bert(args.model_path, net, criterion, opti, lr, lr_scheduler, train_loader, val_loader, epochs, iters_to_accumulate)
 
   """You can download the model saved in the folder "models" by browsing the files on the left of the colab notebook"""
 
@@ -374,13 +375,9 @@ if __name__ == "__main__":
 
   if args.eval:
 
-    if not os.path.exists('results'):
-      print("Creation of the results' folder...")
-      os.system("mkdir results")
-
     # path_to_model = 'models/albert-base-v2_lr_2e-05_val_loss_0.15311_ep_1.pt'
 
-    path_to_output_file = 'results/output.txt'
+    path_to_output_file = os.path.join(args.model_path, 'test_predictions.txt')
 
     df_test = pd.read_csv(args.test_data, sep='\t')
 

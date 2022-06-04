@@ -187,15 +187,15 @@ if __name__ == "__main__":
   parser.add_argument("--output_path", type=str, help="path to save predictions")
   parser.add_argument("-f", "--freeze_bert", default=False, help="if True, freeze the encoder weights and only update the classification layer weights")
   parser.add_argument("-l", "--maxlen", type=int, default=128, help="maximum length of the tokenized input sentence pair: if greater than 'maxlen', the input is truncated and else if smaller, the input is padded")
-  parser.add_argument("-b", "--batch_size", type=int, default=16, help="batch size")
-  parser.add_argument("-t", "--pred_threshold", default=0.5, help="prediction threshold")
+  parser.add_argument("-b", "--batch_size", type=int, default=64, help="batch size")
+  parser.add_argument("-t", "--pred_threshold", type=float, default=0.5, help="prediction threshold")
   parser.add_argument("-s", "--seed", type=int, default=1, help="seeds")
       
   args = parser.parse_args()
 
-  if not os.path.exists(args.data_path):
+  if not os.path.exists(args.output_path):
     print("Creation of the prediction ouput folder...")
-    os.system("mkdir " + args.data_path)
+    os.system("mkdir " + args.output_path)
 
   bert_model = args.model
   maxlen = args.maxlen
