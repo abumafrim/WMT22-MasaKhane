@@ -241,7 +241,7 @@ if __name__ == "__main__":
   tgt_wrong = []
 
   for sent1, sent2, pred in zip(df_pred['sentence1'], df_pred['sentence2'], preds):
-    if pred < args.pred_threshold:
+    if float(pred) < args.pred_threshold:
       src_wrong.append(sent1)
       tgt_wrong.append(sent2)
     else:
