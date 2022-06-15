@@ -1,12 +1,10 @@
 import os
 
-%cd /content/drive/MyDrive/
+%cd /content/drive/MyDrive/WMT22-MasaKhane
 
-if not os.path.exists('WMT22-MasaKhane/data/mmt-africa-format/mafand_mt'):
+if not os.path.exists('data/mmt-africa-format/mafand_mt'):
     print("Creating project and data folders...")
-    os.makedirs("WMT22-MasaKhane/data/mmt-africa-format/mafand_mt")
-
-%cd WMT22-MasaKhane
+    os.makedirs("data/mmt-africa-format/mafand_mt")
 
 !git clone https://github.com/masakhane-io/lafand-mt.git
 
