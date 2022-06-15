@@ -1,14 +1,14 @@
-%cd /content/drive/MyDrive
+%cd /content/drive/MyDrive/WMT22-MasaKhane
 
-if not os.path.exists('WMT22-MasaKhane/data/huggingface_raw'):
+if not os.path.exists('data/huggingface_raw'):
     print("Creating project and data folders...")
-    os.makedirs("WMT22-MasaKhane/data/huggingface_raw")
+    os.makedirs("data/huggingface_raw")
 
-if not os.path.exists('WMT22-MasaKhane/data/mmt-africa-format/huggingface_laser'):
+if not os.path.exists('data/mmt-africa-format/huggingface_laser'):
     print("Creating project and data folders...")
-    os.makedirs("WMT22-MasaKhane/data/mmt-africa-format/huggingface_laser")
+    os.makedirs("data/mmt-africa-format/huggingface_laser")
 
-%cd WMT22-MasaKhane/data/huggingface_raw
+%cd data/huggingface_raw
 
 from sh import gunzip
 import pandas as pd
