@@ -2,15 +2,15 @@ import glob
 import os
 import pandas as pd
 
-hug_path = 'data/huggingface_raw/wmt22_african_'
+hug_path = '../data/huggingface_raw/wmt22_african_'
 hug_langs = ['eng-hau', 'eng-ibo', 'eng-lug', 'eng-swh', 'eng-tsn', 'eng-yor', 'eng-zul', 'fra-wol']
 
-maf_path = 'data/mmt-africa-format/mafand_mt/'
+maf_path = '../data/mmt-africa-format/mafand_mt/'
 maf_langs = ['en_hau', 'en_ibo', 'en_lug', 'en_swa', 'en_tsn', 'en_yor', 'en_zul', 'fr_wol']
 
 for maf_lang, hug_lang in zip(maf_langs, hug_langs):
 
-  path = 'sentence-pair-classification/data/' + hug_lang
+  path = 'data/' + hug_lang
   if not os.path.exists(path):
     print("Creation of the " + hug_lang + " folder...")
     os.system("mkdir " + path)
