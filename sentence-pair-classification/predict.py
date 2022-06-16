@@ -188,7 +188,6 @@ if __name__ == "__main__":
   parser.add_argument("-f", "--freeze_bert", default=False, help="if True, freeze the encoder weights and only update the classification layer weights")
   parser.add_argument("-l", "--maxlen", type=int, default=128, help="maximum length of the tokenized input sentence pair: if greater than 'maxlen', the input is truncated and else if smaller, the input is padded")
   parser.add_argument("-b", "--batch_size", type=int, default=64, help="batch size")
-  parser.add_argument("-t", "--pred_threshold", type=float, default=0.5, help="prediction threshold")
   parser.add_argument("-s", "--seed", type=int, default=1, help="seeds")
       
   args = parser.parse_args()
@@ -230,26 +229,3 @@ if __name__ == "__main__":
   # set the with_labels parameter to False if your want to get predictions on a dataset without labels
 
   print("\nPredictions are available in : {}".format(path_to_output_file))
-
-  with open(path_to_output_file, 'r') as f:
-    preds = f.readlines()
-
-  src_correct = []
-  tgt_correct = []
-
-  src_wrong = []
-  tgt_wrong = []
-
-  for sent1, sent2, pred in zip(df_pred['sentence1'], df_pred['sentence2'], preds):
-    if float(pred) < args.pred_threshold:
-      src_wrong.append(sent1)
-      tgt_wrong.append(sent2)
-    else:
-      src_correct.append(sent1)
-      tgt_correct.append(sent2)
-
-  df = pd.DataFrame(list(zip(src_correct, tgt_correct)), columns=['sentence1', 'sentence2'])
-  df.to_csv(os.path.join(args.output_path, 'correct-translations.tsv'), sep='\t', index=False)
-
-  df = pd.DataFrame(list(zip(src_wrong, tgt_wrong)), columns=['sentence1', 'sentence2'])
-  df.to_csv(os.path.join(args.output_path, 'wrong-translations.tsv'), sep='\t', index=False)
