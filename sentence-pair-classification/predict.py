@@ -203,7 +203,7 @@ if __name__ == "__main__":
   #  Set all seeds to make reproducible results
   set_seed(args.seed)
 
-  path_to_output_file = os.path.join(args.output_path, 'predictions.txt')
+  path_to_output_file = os.path.join(args.output_path, args.model + 'predictions.txt')
   path_to_model = args.model_path
 
   df_pred = pd.read_csv(args.data_path, sep='\t')

@@ -377,7 +377,7 @@ if __name__ == "__main__":
 
     # path_to_model = 'models/albert-base-v2_lr_2e-05_val_loss_0.15311_ep_1.pt'
 
-    path_to_output_file = os.path.join(args.model_path, 'test_predictions.txt')
+    path_to_output_file = os.path.join(args.model_path, args.model + '_test_predictions.txt')
 
     df_test = pd.read_csv(args.test_data, sep='\t')
 
