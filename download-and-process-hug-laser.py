@@ -1,3 +1,9 @@
+from sh import gunzip
+import pandas as pd
+import glob
+import os
+import requests
+
 if not os.path.exists('data/huggingface_raw'):
     print("Creating project and data folders...")
     os.makedirs("data/huggingface_raw")
@@ -5,12 +11,6 @@ if not os.path.exists('data/huggingface_raw'):
 if not os.path.exists('data/mmt-africa-format/huggingface_laser'):
     print("Creating project and data folders...")
     os.makedirs("data/mmt-africa-format/huggingface_laser")
-
-from sh import gunzip
-import pandas as pd
-import glob
-import os
-import requests
 
 hug_langs = ['eng-hau', 'eng-ibo', 'eng-lug', 'eng-swh', 'eng-tsn', 'eng-yor', 'eng-zul', 'fra-wol']
 
@@ -35,3 +35,5 @@ for lang in hug_langs:
 
   df = pd.DataFrame(list(zip(src, tgt)), columns=['input','target'])
   df.to_csv('data/mmt-africa-format/huggingface_laser/wmt22_african_' + lang + '-para.tsv', sep='\t', index=False)
+
+  print('Finished: ' + lang)
