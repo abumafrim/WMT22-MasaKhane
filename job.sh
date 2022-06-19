@@ -15,16 +15,18 @@
 module load python/3
 source ~/scratch/wmt22/wmtenv/bin/activate   
 
-
+CURR_DIR=/home/mila/c/chris.emezue/wmt22
 cd mmtafrica
-python -u mmtafrica.py \
+python -m pdb mmtafrica.py \
  --parallel_dir=data/parallel \
  --homepath=/home/mila/c/chris.emezue/scratch/wmt22 \
- --print_freq=500 \
+ --print_freq=100 \
  --use_reconstruction=False \
  --do_backtranslation=False \
  --checkpoint_freq=500 \
- --model_name=wmt22_mmtafrica \
+ --model_name=wmt22_mmtafrica_final \
  --n_epochs=20 \
- --gradient_accumulation_batch=1 \
- --batch_size=64 \
+ --gradient_accumulation_batch=2048//32 \
+ --batch_size=32 \
+ --log=${CURR_DIR}/train.log \
+ --lr=1e-3
