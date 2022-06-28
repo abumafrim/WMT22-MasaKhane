@@ -1,2 +1,5 @@
 slurm*    
 *.tsv
+
+mmtafrica/*
+!mmtafrica/mmtafrica.py

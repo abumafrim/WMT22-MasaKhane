@@ -1,0 +1,16 @@
+Length of train dataset: 17526225
+Length of dev dataset: 11722
+-----------Using model checkpoint-----------
+No wmt22_mmtafrica_final_bt.pt present. Default to original wmt22_mmtafrica_final.pt
+Evaluaton...
+Getting evaluation set for source language -> eng and target language -> hau
+Getting evaluation set for source language -> eng and target language -> ibo
+Getting evaluation set for source language -> eng and target language -> lug
+Getting evaluation set for source language -> eng and target language -> yor
+Getting evaluation set for source language -> eng and target language -> tsn
+Getting evaluation set for source language -> eng and target language -> swa
+Getting evaluation set for source language -> eng and target language -> zul
+Getting evaluation set for source language -> fr and target language -> wol
+Getting evaluation set for source language -> fra and target language -> wol
+---------------Start of Backtranslation---------------
+Backtranslation 1 of 5--------------

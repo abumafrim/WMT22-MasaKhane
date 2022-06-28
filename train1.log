@@ -1,0 +1,1366 @@
+Length of train dataset: 17526225
+Length of dev dataset: 11722
+-----------Using model checkpoint-----------
+No wmt22_mmtafrica_final_bt.pt present. Default to original wmt22_mmtafrica_final.pt
+Epoch: 1 | Step: 100 | Avg. loss: 30.507
+Epoch: 1 | Step: 200 | Avg. loss: 30.671
+Epoch: 1 | Step: 300 | Avg. loss: 30.553
+Epoch: 1 | Step: 400 | Avg. loss: 30.675
+Epoch: 1 | Step: 500 | Avg. loss: 30.653
+No improvement in loss 25.38599101453003 over best loss 25.38006609467135. Not saving model checkpoint
+Epoch: 1 | Step: 600 | Avg. loss: 30.747
+Epoch: 1 | Step: 700 | Avg. loss: 30.869
+Epoch: 1 | Step: 800 | Avg. loss: 30.642
+Epoch: 1 | Step: 900 | Avg. loss: 30.606
+Epoch: 1 | Step: 1000 | Avg. loss: 30.555
+No improvement in loss 25.38547668613158 over best loss 25.38006609467135. Not saving model checkpoint
+Epoch: 1 | Step: 1100 | Avg. loss: 30.632
+Epoch: 1 | Step: 1200 | Avg. loss: 30.739
+Epoch: 1 | Step: 1300 | Avg. loss: 30.530
+Epoch: 1 | Step: 1400 | Avg. loss: 30.552
+Epoch: 1 | Step: 1500 | Avg. loss: 30.532
+No improvement in loss 25.38565840207213 over best loss 25.38006609467135. Not saving model checkpoint
+Epoch: 1 | Step: 1600 | Avg. loss: 30.663
+Epoch: 1 | Step: 1700 | Avg. loss: 30.649
+Epoch: 1 | Step: 1800 | Avg. loss: 30.671
+Epoch: 1 | Step: 1900 | Avg. loss: 30.563
+Epoch: 1 | Step: 2000 | Avg. loss: 30.517
+No improvement in loss 25.385069348802347 over best loss 25.38006609467135. Not saving model checkpoint
+Epoch: 1 | Step: 2100 | Avg. loss: 30.555
+Epoch: 1 | Step: 2200 | Avg. loss: 30.341
+Epoch: 1 | Step: 2300 | Avg. loss: 30.489
+Epoch: 1 | Step: 2400 | Avg. loss: 30.650
+Epoch: 1 | Step: 2500 | Avg. loss: 30.484
+No improvement in loss 25.385466844941227 over best loss 25.38006609467135. Not saving model checkpoint
+Epoch: 1 | Step: 2600 | Avg. loss: 30.402
+Epoch: 1 | Step: 2700 | Avg. loss: 30.626
+Epoch: 1 | Step: 2800 | Avg. loss: 30.406
+Epoch: 1 | Step: 2900 | Avg. loss: 30.637
+Epoch: 1 | Step: 3000 | Avg. loss: 30.481
+No improvement in loss 25.384413733488866 over best loss 25.38006609467135. Not saving model checkpoint
+Epoch: 1 | Step: 3100 | Avg. loss: 30.514
+Epoch: 1 | Step: 3200 | Avg. loss: 30.467
+Epoch: 1 | Step: 3300 | Avg. loss: 30.478
+Epoch: 1 | Step: 3400 | Avg. loss: 30.457
+Epoch: 1 | Step: 3500 | Avg. loss: 30.517
+No improvement in loss 25.384388456565784 over best loss 25.38006609467135. Not saving model checkpoint
+Epoch: 1 | Step: 3600 | Avg. loss: 30.623
+Epoch: 1 | Step: 3700 | Avg. loss: 30.493
+Epoch: 1 | Step: 3800 | Avg. loss: 30.534
+Epoch: 1 | Step: 3900 | Avg. loss: 30.552
+Epoch: 1 | Step: 4000 | Avg. loss: 30.546
+No improvement in loss 25.385116592761115 over best loss 25.38006609467135. Not saving model checkpoint
+Epoch: 1 | Step: 4100 | Avg. loss: 30.632
+Epoch: 1 | Step: 4200 | Avg. loss: 30.465
+Epoch: 1 | Step: 4300 | Avg. loss: 30.652
+Epoch: 1 | Step: 4400 | Avg. loss: 30.664
+Epoch: 1 | Step: 4500 | Avg. loss: 30.557
+No improvement in loss 25.383704592716484 over best loss 25.38006609467135. Not saving model checkpoint
+Epoch: 1 | Step: 4600 | Avg. loss: 30.690
+Epoch: 1 | Step: 4700 | Avg. loss: 30.525
+Epoch: 1 | Step: 4800 | Avg. loss: 30.573
+Epoch: 1 | Step: 4900 | Avg. loss: 30.597
+Epoch: 1 | Step: 5000 | Avg. loss: 30.692
+No improvement in loss 25.385912982373412 over best loss 25.38006609467135. Not saving model checkpoint
+Epoch: 1 | Step: 5100 | Avg. loss: 30.504
+Epoch: 1 | Step: 5200 | Avg. loss: 30.708
+Epoch: 1 | Step: 5300 | Avg. loss: 30.527
+Epoch: 1 | Step: 5400 | Avg. loss: 30.723
+Epoch: 1 | Step: 5500 | Avg. loss: 30.627
+No improvement in loss 25.385121380648542 over best loss 25.38006609467135. Not saving model checkpoint
+Epoch: 1 | Step: 5600 | Avg. loss: 30.487
+Epoch: 1 | Step: 5700 | Avg. loss: 30.739
+Epoch: 1 | Step: 5800 | Avg. loss: 30.593
+Epoch: 1 | Step: 5900 | Avg. loss: 30.478
+Epoch: 1 | Step: 6000 | Avg. loss: 30.777
+No improvement in loss 25.38584435425221 over best loss 25.38006609467135. Not saving model checkpoint
+Epoch: 1 | Step: 6100 | Avg. loss: 30.550
+Epoch: 1 | Step: 6200 | Avg. loss: 30.625
+Epoch: 1 | Step: 6300 | Avg. loss: 30.781
+Epoch: 1 | Step: 6400 | Avg. loss: 30.505
+Epoch: 1 | Step: 6500 | Avg. loss: 30.613
+No improvement in loss 25.384564296935785 over best loss 25.38006609467135. Not saving model checkpoint
+Epoch: 1 | Step: 6600 | Avg. loss: 30.573
+Epoch: 1 | Step: 6700 | Avg. loss: 30.639
+Epoch: 1 | Step: 6800 | Avg. loss: 30.686
+Epoch: 1 | Step: 6900 | Avg. loss: 30.606
+Epoch: 1 | Step: 7000 | Avg. loss: 30.528
+No improvement in loss 25.384692739822366 over best loss 25.38006609467135. Not saving model checkpoint
+Epoch: 1 | Step: 7100 | Avg. loss: 30.626
+Epoch: 1 | Step: 7200 | Avg. loss: 30.688
+Epoch: 1 | Step: 7300 | Avg. loss: 30.541
+Epoch: 1 | Step: 7400 | Avg. loss: 30.499
+Epoch: 1 | Step: 7500 | Avg. loss: 30.434
+No improvement in loss 25.384663052318203 over best loss 25.38006609467135. Not saving model checkpoint
+Epoch: 1 | Step: 7600 | Avg. loss: 30.727
+Epoch: 1 | Step: 7700 | Avg. loss: 30.650
+Epoch: 1 | Step: 7800 | Avg. loss: 30.583
+Epoch: 1 | Step: 7900 | Avg. loss: 30.566
+Epoch: 1 | Step: 8000 | Avg. loss: 30.628
+No improvement in loss 25.38464906075804 over best loss 25.38006609467135. Not saving model checkpoint
+Epoch: 1 | Step: 8100 | Avg. loss: 30.465
+Epoch: 1 | Step: 8200 | Avg. loss: 30.577
+Epoch: 1 | Step: 8300 | Avg. loss: 30.641
+Epoch: 1 | Step: 8400 | Avg. loss: 30.644
+Epoch: 1 | Step: 8500 | Avg. loss: 30.614
+No improvement in loss 25.386565441324148 over best loss 25.38006609467135. Not saving model checkpoint
+Epoch: 1 | Step: 8600 | Avg. loss: 30.579
+Epoch: 1 | Step: 8700 | Avg. loss: 30.609
+Epoch: 1 | Step: 8800 | Avg. loss: 30.569
+Epoch: 1 | Step: 8900 | Avg. loss: 30.630
+Epoch: 1 | Step: 9000 | Avg. loss: 30.509
+No improvement in loss 25.38540222407363 over best loss 25.38006609467135. Not saving model checkpoint
+Epoch: 1 | Step: 9100 | Avg. loss: 30.547
+Epoch: 1 | Step: 9200 | Avg. loss: 30.601
+Epoch: 1 | Step: 9300 | Avg. loss: 30.511
+Epoch: 1 | Step: 9400 | Avg. loss: 30.672
+Epoch: 1 | Step: 9500 | Avg. loss: 30.695
+No improvement in loss 25.384155210986794 over best loss 25.38006609467135. Not saving model checkpoint
+Epoch: 1 | Step: 9600 | Avg. loss: 30.525
+Epoch: 1 | Step: 9700 | Avg. loss: 30.598
+Epoch: 1 | Step: 9800 | Avg. loss: 30.417
+Epoch: 1 | Step: 9900 | Avg. loss: 30.654
+Epoch: 1 | Step: 10000 | Avg. loss: 30.604
+No improvement in loss 25.384580989488963 over best loss 25.38006609467135. Not saving model checkpoint
+Epoch: 1 | Step: 10100 | Avg. loss: 30.574
+Epoch: 1 | Step: 10200 | Avg. loss: 30.630
+Epoch: 1 | Step: 10300 | Avg. loss: 30.514
+Epoch: 1 | Step: 10400 | Avg. loss: 30.642
+Epoch: 1 | Step: 10500 | Avg. loss: 30.521
+No improvement in loss 25.384535020565433 over best loss 25.38006609467135. Not saving model checkpoint
+Epoch: 1 | Step: 10600 | Avg. loss: 30.525
+Epoch: 1 | Step: 10700 | Avg. loss: 30.585
+Epoch: 1 | Step: 10800 | Avg. loss: 30.610
+Epoch: 1 | Step: 10900 | Avg. loss: 30.467
+Epoch: 1 | Step: 11000 | Avg. loss: 30.593
+No improvement in loss 25.38587197307675 over best loss 25.38006609467135. Not saving model checkpoint
+Epoch: 1 | Step: 11100 | Avg. loss: 30.646
+Epoch: 1 | Step: 11200 | Avg. loss: 30.613
+Epoch: 1 | Step: 11300 | Avg. loss: 30.621
+Epoch: 1 | Step: 11400 | Avg. loss: 30.639
+Epoch: 1 | Step: 11500 | Avg. loss: 30.520
+No improvement in loss 25.38509185707748 over best loss 25.38006609467135. Not saving model checkpoint
+Epoch: 1 | Step: 11600 | Avg. loss: 30.557
+Epoch: 1 | Step: 11700 | Avg. loss: 30.518
+Epoch: 1 | Step: 11800 | Avg. loss: 30.715
+Epoch: 1 | Step: 11900 | Avg. loss: 30.581
+Epoch: 1 | Step: 12000 | Avg. loss: 30.676
+No improvement in loss 25.38424380511899 over best loss 25.38006609467135. Not saving model checkpoint
+Epoch: 1 | Step: 12100 | Avg. loss: 30.537
+Epoch: 1 | Step: 12200 | Avg. loss: 30.526
+Epoch: 1 | Step: 12300 | Avg. loss: 30.627
+Epoch: 1 | Step: 12400 | Avg. loss: 30.690
+Epoch: 1 | Step: 12500 | Avg. loss: 30.656
+No improvement in loss 25.38570334055902 over best loss 25.38006609467135. Not saving model checkpoint
+Epoch: 1 | Step: 12600 | Avg. loss: 30.576
+Epoch: 1 | Step: 12700 | Avg. loss: 30.553
+Epoch: 1 | Step: 12800 | Avg. loss: 30.538
+Epoch: 1 | Step: 12900 | Avg. loss: 30.528
+Epoch: 1 | Step: 13000 | Avg. loss: 30.542
+No improvement in loss 25.384870492745225 over best loss 25.38006609467135. Not saving model checkpoint
+Epoch: 1 | Step: 13100 | Avg. loss: 30.579
+Epoch: 1 | Step: 13200 | Avg. loss: 30.556
+Epoch: 1 | Step: 13300 | Avg. loss: 30.743
+Epoch: 1 | Step: 13400 | Avg. loss: 30.517
+Epoch: 1 | Step: 13500 | Avg. loss: 30.600
+No improvement in loss 25.38596690075134 over best loss 25.38006609467135. Not saving model checkpoint
+Epoch: 1 | Step: 13600 | Avg. loss: 30.634
+Epoch: 1 | Step: 13700 | Avg. loss: 30.521
+Epoch: 1 | Step: 13800 | Avg. loss: 30.525
+Epoch: 1 | Step: 13900 | Avg. loss: 30.517
+Epoch: 1 | Step: 14000 | Avg. loss: 30.492
+No improvement in loss 25.385439965116703 over best loss 25.38006609467135. Not saving model checkpoint
+Epoch: 1 | Step: 14100 | Avg. loss: 30.531
+Epoch: 1 | Step: 14200 | Avg. loss: 30.659
+Epoch: 1 | Step: 14300 | Avg. loss: 30.651
+Epoch: 1 | Step: 14400 | Avg. loss: 30.435
+Epoch: 1 | Step: 14500 | Avg. loss: 30.543
+No improvement in loss 25.385905613190154 over best loss 25.38006609467135. Not saving model checkpoint
+Epoch: 1 | Step: 14600 | Avg. loss: 30.568
+Epoch: 1 | Step: 14700 | Avg. loss: 30.675
+Epoch: 1 | Step: 14800 | Avg. loss: 30.545
+Epoch: 1 | Step: 14900 | Avg. loss: 30.555
+Epoch: 1 | Step: 15000 | Avg. loss: 30.580
+No improvement in loss 25.385570409027974 over best loss 25.38006609467135. Not saving model checkpoint
+Epoch: 1 | Step: 15100 | Avg. loss: 30.652
+Epoch: 1 | Step: 15200 | Avg. loss: 30.468
+Epoch: 1 | Step: 15300 | Avg. loss: 30.731
+Epoch: 1 | Step: 15400 | Avg. loss: 30.578
+Epoch: 1 | Step: 15500 | Avg. loss: 30.525
+No improvement in loss 25.38445889835956 over best loss 25.38006609467135. Not saving model checkpoint
+Epoch: 1 | Step: 15600 | Avg. loss: 30.612
+Epoch: 1 | Step: 15700 | Avg. loss: 30.670
+Epoch: 1 | Step: 15800 | Avg. loss: 30.509
+Epoch: 1 | Step: 15900 | Avg. loss: 30.667
+Epoch: 1 | Step: 16000 | Avg. loss: 30.736
+No improvement in loss 25.384404951358395 over best loss 25.38006609467135. Not saving model checkpoint
+Epoch: 1 | Step: 16100 | Avg. loss: 30.528
+Epoch: 1 | Step: 16200 | Avg. loss: 30.558
+Epoch: 1 | Step: 16300 | Avg. loss: 30.620
+Epoch: 1 | Step: 16400 | Avg. loss: 30.519
+Epoch: 1 | Step: 16500 | Avg. loss: 30.667
+No improvement in loss 25.385171799184842 over best loss 25.38006609467135. Not saving model checkpoint
+Epoch: 1 | Step: 16600 | Avg. loss: 30.503
+Epoch: 1 | Step: 16700 | Avg. loss: 30.501
+Epoch: 1 | Step: 16800 | Avg. loss: 30.546
+Epoch: 1 | Step: 16900 | Avg. loss: 30.499
+Epoch: 1 | Step: 17000 | Avg. loss: 30.523
+No improvement in loss 25.384410475643726 over best loss 25.38006609467135. Not saving model checkpoint
+Epoch: 1 | Step: 17100 | Avg. loss: 30.567
+Epoch: 1 | Step: 17200 | Avg. loss: 30.503
+Epoch: 1 | Step: 17300 | Avg. loss: 30.558
+Epoch: 1 | Step: 17400 | Avg. loss: 30.542
+Epoch: 1 | Step: 17500 | Avg. loss: 30.312
+No improvement in loss 25.38469235991391 over best loss 25.38006609467135. Not saving model checkpoint
+Epoch: 1 | Step: 17600 | Avg. loss: 30.650
+Epoch: 1 | Step: 17700 | Avg. loss: 30.605
+Epoch: 1 | Step: 17800 | Avg. loss: 30.638
+Epoch: 1 | Step: 17900 | Avg. loss: 30.626
+Epoch: 1 | Step: 18000 | Avg. loss: 30.544
+No improvement in loss 25.38408739992899 over best loss 25.38006609467135. Not saving model checkpoint
+Epoch: 1 | Step: 18100 | Avg. loss: 30.730
+Epoch: 1 | Step: 18200 | Avg. loss: 30.305
+Epoch: 1 | Step: 18300 | Avg. loss: 30.488
+Epoch: 1 | Step: 18400 | Avg. loss: 30.479
+Epoch: 1 | Step: 18500 | Avg. loss: 30.632
+No improvement in loss 25.386619409142217 over best loss 25.38006609467135. Not saving model checkpoint
+Epoch: 1 | Step: 18600 | Avg. loss: 30.591
+Epoch: 1 | Step: 18700 | Avg. loss: 30.748
+Epoch: 1 | Step: 18800 | Avg. loss: 30.584
+Epoch: 1 | Step: 18900 | Avg. loss: 30.487
+Epoch: 1 | Step: 19000 | Avg. loss: 30.620
+No improvement in loss 25.384687842646205 over best loss 25.38006609467135. Not saving model checkpoint
+Epoch: 1 | Step: 19100 | Avg. loss: 30.594
+Epoch: 1 | Step: 19200 | Avg. loss: 30.469
+Epoch: 1 | Step: 19300 | Avg. loss: 30.656
+Epoch: 1 | Step: 19400 | Avg. loss: 30.626
+Epoch: 1 | Step: 19500 | Avg. loss: 30.540
+No improvement in loss 25.385785158789663 over best loss 25.38006609467135. Not saving model checkpoint
+Epoch: 1 | Step: 19600 | Avg. loss: 30.650
+Epoch: 1 | Step: 19700 | Avg. loss: 30.467
+Epoch: 1 | Step: 19800 | Avg. loss: 30.687
+Epoch: 1 | Step: 19900 | Avg. loss: 30.692
+Epoch: 1 | Step: 20000 | Avg. loss: 30.604
+No improvement in loss 25.38358236887933 over best loss 25.38006609467135. Not saving model checkpoint
+Epoch: 1 | Step: 20100 | Avg. loss: 30.531
+Epoch: 1 | Step: 20200 | Avg. loss: 30.513
+Epoch: 1 | Step: 20300 | Avg. loss: 30.623
+Epoch: 1 | Step: 20400 | Avg. loss: 30.549
+Epoch: 1 | Step: 20500 | Avg. loss: 30.504
+No improvement in loss 25.384545980664264 over best loss 25.38006609467135. Not saving model checkpoint
+Epoch: 1 | Step: 20600 | Avg. loss: 30.464
+Epoch: 1 | Step: 20700 | Avg. loss: 30.519
+Epoch: 1 | Step: 20800 | Avg. loss: 30.748
+Epoch: 1 | Step: 20900 | Avg. loss: 30.605
+Epoch: 1 | Step: 21000 | Avg. loss: 30.544
+No improvement in loss 25.38497665374048 over best loss 25.38006609467135. Not saving model checkpoint
+Epoch: 1 | Step: 21100 | Avg. loss: 30.584
+Epoch: 1 | Step: 21200 | Avg. loss: 30.551
+Epoch: 1 | Step: 21300 | Avg. loss: 30.633
+Epoch: 1 | Step: 21400 | Avg. loss: 30.667
+Epoch: 1 | Step: 21500 | Avg. loss: 30.819
+No improvement in loss 25.385748094295902 over best loss 25.38006609467135. Not saving model checkpoint
+Epoch: 1 | Step: 21600 | Avg. loss: 30.546
+Epoch: 1 | Step: 21700 | Avg. loss: 30.598
+Epoch: 1 | Step: 21800 | Avg. loss: 30.597
+Epoch: 1 | Step: 21900 | Avg. loss: 30.611
+Epoch: 1 | Step: 22000 | Avg. loss: 30.577
+No improvement in loss 25.385598436384214 over best loss 25.38006609467135. Not saving model checkpoint
+Epoch: 1 | Step: 22100 | Avg. loss: 30.602
+Epoch: 1 | Step: 22200 | Avg. loss: 30.600
+Epoch: 1 | Step: 22300 | Avg. loss: 30.514
+Epoch: 1 | Step: 22400 | Avg. loss: 30.671
+Epoch: 1 | Step: 22500 | Avg. loss: 30.559
+No improvement in loss 25.384832884409906 over best loss 25.38006609467135. Not saving model checkpoint
+Epoch: 1 | Step: 22600 | Avg. loss: 30.541
+Epoch: 1 | Step: 22700 | Avg. loss: 30.477
+Epoch: 1 | Step: 22800 | Avg. loss: 30.554
+Epoch: 1 | Step: 22900 | Avg. loss: 30.681
+Epoch: 1 | Step: 23000 | Avg. loss: 30.613
+No improvement in loss 25.385556742731904 over best loss 25.38006609467135. Not saving model checkpoint
+Epoch: 1 | Step: 23100 | Avg. loss: 30.709
+Epoch: 1 | Step: 23200 | Avg. loss: 30.678
+Epoch: 1 | Step: 23300 | Avg. loss: 30.609
+Epoch: 1 | Step: 23400 | Avg. loss: 30.609
+Epoch: 1 | Step: 23500 | Avg. loss: 30.339
+No improvement in loss 25.386012331037534 over best loss 25.38006609467135. Not saving model checkpoint
+Epoch: 1 | Step: 23600 | Avg. loss: 30.615
+Epoch: 1 | Step: 23700 | Avg. loss: 30.482
+Epoch: 1 | Step: 23800 | Avg. loss: 30.661
+Epoch: 1 | Step: 23900 | Avg. loss: 30.622
+Epoch: 1 | Step: 24000 | Avg. loss: 30.666
+No improvement in loss 25.385633304694828 over best loss 25.38006609467135. Not saving model checkpoint
+Epoch: 1 | Step: 24100 | Avg. loss: 30.681
+Epoch: 1 | Step: 24200 | Avg. loss: 30.693
+Epoch: 1 | Step: 24300 | Avg. loss: 30.491
+Epoch: 1 | Step: 24400 | Avg. loss: 30.583
+Epoch: 1 | Step: 24500 | Avg. loss: 30.502
+No improvement in loss 25.38463471791266 over best loss 25.38006609467135. Not saving model checkpoint
+Epoch: 1 | Step: 24600 | Avg. loss: 30.724
+Epoch: 1 | Step: 24700 | Avg. loss: 30.526
+Epoch: 1 | Step: 24800 | Avg. loss: 30.534
+Epoch: 1 | Step: 24900 | Avg. loss: 30.472
+Epoch: 1 | Step: 25000 | Avg. loss: 30.775
+No improvement in loss 25.38479344418722 over best loss 25.38006609467135. Not saving model checkpoint
+Epoch: 1 | Step: 25100 | Avg. loss: 30.609
+Epoch: 1 | Step: 25200 | Avg. loss: 30.539
+Epoch: 1 | Step: 25300 | Avg. loss: 30.603
+Epoch: 1 | Step: 25400 | Avg. loss: 30.480
+Epoch: 1 | Step: 25500 | Avg. loss: 30.680
+No improvement in loss 25.384700707491554 over best loss 25.38006609467135. Not saving model checkpoint
+Epoch: 1 | Step: 25600 | Avg. loss: 30.586
+Epoch: 1 | Step: 25700 | Avg. loss: 30.646
+Epoch: 1 | Step: 25800 | Avg. loss: 30.607
+Epoch: 1 | Step: 25900 | Avg. loss: 30.725
+Epoch: 1 | Step: 26000 | Avg. loss: 30.526
+No improvement in loss 25.38540674394345 over best loss 25.38006609467135. Not saving model checkpoint
+Epoch: 1 | Step: 26100 | Avg. loss: 30.478
+Epoch: 1 | Step: 26200 | Avg. loss: 30.418
+Epoch: 1 | Step: 26300 | Avg. loss: 30.706
+Epoch: 1 | Step: 26400 | Avg. loss: 30.426
+Epoch: 1 | Step: 26500 | Avg. loss: 30.435
+No improvement in loss 25.383581010576485 over best loss 25.38006609467135. Not saving model checkpoint
+Epoch: 1 | Step: 26600 | Avg. loss: 30.469
+Epoch: 1 | Step: 26700 | Avg. loss: 30.596
+Epoch: 1 | Step: 26800 | Avg. loss: 30.590
+Epoch: 1 | Step: 26900 | Avg. loss: 30.577
+Epoch: 1 | Step: 27000 | Avg. loss: 30.741
+No improvement in loss 25.385406202703997 over best loss 25.38006609467135. Not saving model checkpoint
+Epoch: 1 | Step: 27100 | Avg. loss: 30.450
+Epoch: 1 | Step: 27200 | Avg. loss: 30.484
+Epoch: 1 | Step: 27300 | Avg. loss: 30.517
+Epoch: 1 | Step: 27400 | Avg. loss: 30.725
+Epoch: 1 | Step: 27500 | Avg. loss: 30.388
+No improvement in loss 25.385367373977807 over best loss 25.38006609467135. Not saving model checkpoint
+Epoch: 1 | Step: 27600 | Avg. loss: 30.471
+Epoch: 1 | Step: 27700 | Avg. loss: 30.545
+Epoch: 1 | Step: 27800 | Avg. loss: 30.644
+Epoch: 1 | Step: 27900 | Avg. loss: 30.679
+Epoch: 1 | Step: 28000 | Avg. loss: 30.517
+No improvement in loss 25.384831637997905 over best loss 25.38006609467135. Not saving model checkpoint
+Epoch: 1 | Step: 28100 | Avg. loss: 30.538
+Epoch: 1 | Step: 28200 | Avg. loss: 30.632
+Epoch: 1 | Step: 28300 | Avg. loss: 30.446
+Epoch: 1 | Step: 28400 | Avg. loss: 30.552
+Epoch: 1 | Step: 28500 | Avg. loss: 30.476
+No improvement in loss 25.38495840512389 over best loss 25.38006609467135. Not saving model checkpoint
+Epoch: 1 | Step: 28600 | Avg. loss: 30.574
+Epoch: 1 | Step: 28700 | Avg. loss: 30.444
+Epoch: 1 | Step: 28800 | Avg. loss: 30.665
+Epoch: 1 | Step: 28900 | Avg. loss: 30.588
+Epoch: 1 | Step: 29000 | Avg. loss: 30.745
+No improvement in loss 25.385600882370184 over best loss 25.38006609467135. Not saving model checkpoint
+Epoch: 1 | Step: 29100 | Avg. loss: 30.681
+Epoch: 1 | Step: 29200 | Avg. loss: 30.667
+Epoch: 1 | Step: 29300 | Avg. loss: 30.674
+Epoch: 1 | Step: 29400 | Avg. loss: 30.605
+Epoch: 1 | Step: 29500 | Avg. loss: 30.601
+No improvement in loss 25.384756822052626 over best loss 25.38006609467135. Not saving model checkpoint
+Epoch: 1 | Step: 29600 | Avg. loss: 30.738
+Epoch: 1 | Step: 29700 | Avg. loss: 30.684
+Epoch: 1 | Step: 29800 | Avg. loss: 30.629
+Epoch: 1 | Step: 29900 | Avg. loss: 30.517
+Epoch: 1 | Step: 30000 | Avg. loss: 30.575
+No improvement in loss 25.385376483974483 over best loss 25.38006609467135. Not saving model checkpoint
+Epoch: 1 | Step: 30100 | Avg. loss: 30.638
+Epoch: 1 | Step: 30200 | Avg. loss: 30.634
+Epoch: 1 | Step: 30300 | Avg. loss: 30.519
+Epoch: 1 | Step: 30400 | Avg. loss: 30.584
+Epoch: 1 | Step: 30500 | Avg. loss: 30.452
+No improvement in loss 25.385651040695212 over best loss 25.38006609467135. Not saving model checkpoint
+Epoch: 1 | Step: 30600 | Avg. loss: 30.477
+Epoch: 1 | Step: 30700 | Avg. loss: 30.580
+Epoch: 1 | Step: 30800 | Avg. loss: 30.602
+Epoch: 1 | Step: 30900 | Avg. loss: 30.505
+Epoch: 1 | Step: 31000 | Avg. loss: 30.592
+No improvement in loss 25.384669260959182 over best loss 25.38006609467135. Not saving model checkpoint
+Epoch: 1 | Step: 31100 | Avg. loss: 30.611
+Epoch: 1 | Step: 31200 | Avg. loss: 30.574
+Epoch: 1 | Step: 31300 | Avg. loss: 30.737
+Epoch: 1 | Step: 31400 | Avg. loss: 30.608
+Epoch: 1 | Step: 31500 | Avg. loss: 30.678
+No improvement in loss 25.38483006892393 over best loss 25.38006609467135. Not saving model checkpoint
+Epoch: 1 | Step: 31600 | Avg. loss: 30.639
+Epoch: 1 | Step: 31700 | Avg. loss: 30.710
+Epoch: 1 | Step: 31800 | Avg. loss: 30.502
+Epoch: 1 | Step: 31900 | Avg. loss: 30.490
+Epoch: 1 | Step: 32000 | Avg. loss: 30.626
+No improvement in loss 25.385342669519527 over best loss 25.38006609467135. Not saving model checkpoint
+Epoch: 1 | Step: 32100 | Avg. loss: 30.628
+Epoch: 1 | Step: 32200 | Avg. loss: 30.705
+Epoch: 1 | Step: 32300 | Avg. loss: 30.542
+Epoch: 1 | Step: 32400 | Avg. loss: 30.568
+Epoch: 1 | Step: 32500 | Avg. loss: 30.639
+No improvement in loss 25.385543352259784 over best loss 25.38006609467135. Not saving model checkpoint
+Epoch: 1 | Step: 32600 | Avg. loss: 30.494
+Epoch: 1 | Step: 32700 | Avg. loss: 30.466
+Epoch: 1 | Step: 32800 | Avg. loss: 30.685
+Epoch: 1 | Step: 32900 | Avg. loss: 30.608
+Epoch: 1 | Step: 33000 | Avg. loss: 30.513
+No improvement in loss 25.383643008514447 over best loss 25.38006609467135. Not saving model checkpoint
+Epoch: 1 | Step: 33100 | Avg. loss: 30.556
+Epoch: 1 | Step: 33200 | Avg. loss: 30.608
+Epoch: 1 | Step: 33300 | Avg. loss: 30.441
+Epoch: 1 | Step: 33400 | Avg. loss: 30.598
+Epoch: 1 | Step: 33500 | Avg. loss: 30.450
+No improvement in loss 25.385370153034206 over best loss 25.38006609467135. Not saving model checkpoint
+Epoch: 1 | Step: 33600 | Avg. loss: 30.533
+Epoch: 1 | Step: 33700 | Avg. loss: 30.646
+Epoch: 1 | Step: 33800 | Avg. loss: 30.406
+Epoch: 1 | Step: 33900 | Avg. loss: 30.573
+Epoch: 1 | Step: 34000 | Avg. loss: 30.521
+No improvement in loss 25.384891804048504 over best loss 25.38006609467135. Not saving model checkpoint
+Epoch: 1 | Step: 34100 | Avg. loss: 30.744
+Epoch: 1 | Step: 34200 | Avg. loss: 30.533
+Epoch: 1 | Step: 34300 | Avg. loss: 30.767
+Epoch: 1 | Step: 34400 | Avg. loss: 30.424
+Epoch: 1 | Step: 34500 | Avg. loss: 30.709
+No improvement in loss 25.38638445137305 over best loss 25.38006609467135. Not saving model checkpoint
+Epoch: 1 | Step: 34600 | Avg. loss: 30.510
+Epoch: 1 | Step: 34700 | Avg. loss: 30.420
+Epoch: 1 | Step: 34800 | Avg. loss: 30.674
+Epoch: 1 | Step: 34900 | Avg. loss: 30.519
+Epoch: 1 | Step: 35000 | Avg. loss: 30.610
+No improvement in loss 25.38523365140449 over best loss 25.38006609467135. Not saving model checkpoint
+Epoch: 1 | Step: 35100 | Avg. loss: 30.505
+Epoch: 1 | Step: 35200 | Avg. loss: 30.648
+Epoch: 1 | Step: 35300 | Avg. loss: 30.661
+Epoch: 1 | Step: 35400 | Avg. loss: 30.552
+Epoch: 1 | Step: 35500 | Avg. loss: 30.745
+No improvement in loss 25.38396916773277 over best loss 25.38006609467135. Not saving model checkpoint
+Epoch: 1 | Step: 35600 | Avg. loss: 30.685
+Epoch: 1 | Step: 35700 | Avg. loss: 30.445
+Epoch: 1 | Step: 35800 | Avg. loss: 30.605
+Epoch: 1 | Step: 35900 | Avg. loss: 30.625
+Epoch: 1 | Step: 36000 | Avg. loss: 30.598
+No improvement in loss 25.385701729851238 over best loss 25.38006609467135. Not saving model checkpoint
+Epoch: 1 | Step: 36100 | Avg. loss: 30.636
+Epoch: 1 | Step: 36200 | Avg. loss: 30.760
+Epoch: 1 | Step: 36300 | Avg. loss: 30.603
+Epoch: 1 | Step: 36400 | Avg. loss: 30.582
+Epoch: 1 | Step: 36500 | Avg. loss: 30.436
+No improvement in loss 25.38453716991055 over best loss 25.38006609467135. Not saving model checkpoint
+Epoch: 1 | Step: 36600 | Avg. loss: 30.627
+Epoch: 1 | Step: 36700 | Avg. loss: 30.718
+Epoch: 1 | Step: 36800 | Avg. loss: 30.660
+Epoch: 1 | Step: 36900 | Avg. loss: 30.769
+Epoch: 1 | Step: 37000 | Avg. loss: 30.542
+No improvement in loss 25.384658399740637 over best loss 25.38006609467135. Not saving model checkpoint
+Epoch: 1 | Step: 37100 | Avg. loss: 30.544
+Epoch: 1 | Step: 37200 | Avg. loss: 30.465
+Epoch: 1 | Step: 37300 | Avg. loss: 30.701
+Epoch: 1 | Step: 37400 | Avg. loss: 30.622
+Epoch: 1 | Step: 37500 | Avg. loss: 30.607
+No improvement in loss 25.386035713622547 over best loss 25.38006609467135. Not saving model checkpoint
+Epoch: 1 | Step: 37600 | Avg. loss: 30.609
+Epoch: 1 | Step: 37700 | Avg. loss: 30.582
+Epoch: 1 | Step: 37800 | Avg. loss: 30.522
+Epoch: 1 | Step: 37900 | Avg. loss: 30.428
+Epoch: 1 | Step: 38000 | Avg. loss: 30.536
+No improvement in loss 25.385444766014693 over best loss 25.38006609467135. Not saving model checkpoint
+Epoch: 1 | Step: 38100 | Avg. loss: 30.653
+Epoch: 1 | Step: 38200 | Avg. loss: 30.553
+Epoch: 1 | Step: 38300 | Avg. loss: 30.566
+Epoch: 1 | Step: 38400 | Avg. loss: 30.724
+Epoch: 1 | Step: 38500 | Avg. loss: 30.594
+No improvement in loss 25.385628053631333 over best loss 25.38006609467135. Not saving model checkpoint
+Epoch: 1 | Step: 38600 | Avg. loss: 30.700
+Epoch: 1 | Step: 38700 | Avg. loss: 30.571
+Epoch: 1 | Step: 38800 | Avg. loss: 30.549
+Epoch: 1 | Step: 38900 | Avg. loss: 30.428
+Epoch: 1 | Step: 39000 | Avg. loss: 30.508
+No improvement in loss 25.38586015428072 over best loss 25.38006609467135. Not saving model checkpoint
+Epoch: 1 | Step: 39100 | Avg. loss: 30.526
+Epoch: 1 | Step: 39200 | Avg. loss: 30.773
+Epoch: 1 | Step: 39300 | Avg. loss: 30.531
+Epoch: 1 | Step: 39400 | Avg. loss: 30.606
+Epoch: 1 | Step: 39500 | Avg. loss: 30.558
+No improvement in loss 25.386364277193035 over best loss 25.38006609467135. Not saving model checkpoint
+Epoch: 1 | Step: 39600 | Avg. loss: 30.406
+Epoch: 1 | Step: 39700 | Avg. loss: 30.678
+Epoch: 1 | Step: 39800 | Avg. loss: 30.546
+Epoch: 1 | Step: 39900 | Avg. loss: 30.552
+Epoch: 1 | Step: 40000 | Avg. loss: 30.514
+No improvement in loss 25.385731656749773 over best loss 25.38006609467135. Not saving model checkpoint
+Epoch: 1 | Step: 40100 | Avg. loss: 30.569
+Epoch: 1 | Step: 40200 | Avg. loss: 30.717
+Epoch: 1 | Step: 40300 | Avg. loss: 30.343
+Epoch: 1 | Step: 40400 | Avg. loss: 30.561
+Epoch: 1 | Step: 40500 | Avg. loss: 30.663
+No improvement in loss 25.384375581311986 over best loss 25.38006609467135. Not saving model checkpoint
+Epoch: 1 | Step: 40600 | Avg. loss: 30.610
+Epoch: 1 | Step: 40700 | Avg. loss: 30.637
+Epoch: 1 | Step: 40800 | Avg. loss: 30.732
+Epoch: 1 | Step: 40900 | Avg. loss: 30.747
+Epoch: 1 | Step: 41000 | Avg. loss: 30.626
+No improvement in loss 25.384998714452227 over best loss 25.38006609467135. Not saving model checkpoint
+Epoch: 1 | Step: 41100 | Avg. loss: 30.648
+Epoch: 1 | Step: 41200 | Avg. loss: 30.405
+Epoch: 1 | Step: 41300 | Avg. loss: 30.454
+Epoch: 1 | Step: 41400 | Avg. loss: 30.427
+Epoch: 1 | Step: 41500 | Avg. loss: 30.592
+No improvement in loss 25.38565777236085 over best loss 25.38006609467135. Not saving model checkpoint
+Epoch: 1 | Step: 41600 | Avg. loss: 30.593
+Epoch: 1 | Step: 41700 | Avg. loss: 30.661
+Epoch: 1 | Step: 41800 | Avg. loss: 30.599
+Epoch: 1 | Step: 41900 | Avg. loss: 30.653
+Epoch: 1 | Step: 42000 | Avg. loss: 30.520
+No improvement in loss 25.384465604004074 over best loss 25.38006609467135. Not saving model checkpoint
+Epoch: 1 | Step: 42100 | Avg. loss: 30.571
+Epoch: 1 | Step: 42200 | Avg. loss: 30.585
+Epoch: 1 | Step: 42300 | Avg. loss: 30.530
+Epoch: 1 | Step: 42400 | Avg. loss: 30.427
+Epoch: 1 | Step: 42500 | Avg. loss: 30.631
+No improvement in loss 25.38533481374119 over best loss 25.38006609467135. Not saving model checkpoint
+Epoch: 1 | Step: 42600 | Avg. loss: 30.337
+Epoch: 1 | Step: 42700 | Avg. loss: 30.660
+Epoch: 1 | Step: 42800 | Avg. loss: 30.921
+Epoch: 1 | Step: 42900 | Avg. loss: 30.547
+Epoch: 1 | Step: 43000 | Avg. loss: 30.609
+No improvement in loss 25.384518101628448 over best loss 25.38006609467135. Not saving model checkpoint
+Epoch: 1 | Step: 43100 | Avg. loss: 30.729
+Epoch: 1 | Step: 43200 | Avg. loss: 30.705
+Epoch: 1 | Step: 43300 | Avg. loss: 30.683
+Epoch: 1 | Step: 43400 | Avg. loss: 30.771
+Epoch: 1 | Step: 43500 | Avg. loss: 30.478
+No improvement in loss 25.384648225479854 over best loss 25.38006609467135. Not saving model checkpoint
+Epoch: 1 | Step: 43600 | Avg. loss: 30.768
+Epoch: 1 | Step: 43700 | Avg. loss: 30.694
+Epoch: 1 | Step: 43800 | Avg. loss: 30.615
+Epoch: 1 | Step: 43900 | Avg. loss: 30.623
+Epoch: 1 | Step: 44000 | Avg. loss: 30.572
+No improvement in loss 25.384755612070204 over best loss 25.38006609467135. Not saving model checkpoint
+Epoch: 1 | Step: 44100 | Avg. loss: 30.474
+Epoch: 1 | Step: 44200 | Avg. loss: 30.536
+Epoch: 1 | Step: 44300 | Avg. loss: 30.692
+Epoch: 1 | Step: 44400 | Avg. loss: 30.431
+Epoch: 1 | Step: 44500 | Avg. loss: 30.446
+No improvement in loss 25.385942089606438 over best loss 25.38006609467135. Not saving model checkpoint
+Epoch: 1 | Step: 44600 | Avg. loss: 30.604
+Epoch: 1 | Step: 44700 | Avg. loss: 30.388
+Epoch: 1 | Step: 44800 | Avg. loss: 30.628
+Epoch: 1 | Step: 44900 | Avg. loss: 30.634
+Epoch: 1 | Step: 45000 | Avg. loss: 30.512
+No improvement in loss 25.38473318706268 over best loss 25.38006609467135. Not saving model checkpoint
+Epoch: 1 | Step: 45100 | Avg. loss: 30.507
+Epoch: 1 | Step: 45200 | Avg. loss: 30.768
+Epoch: 1 | Step: 45300 | Avg. loss: 30.521
+Epoch: 1 | Step: 45400 | Avg. loss: 30.596
+Epoch: 1 | Step: 45500 | Avg. loss: 30.809
+No improvement in loss 25.385141403906015 over best loss 25.38006609467135. Not saving model checkpoint
+Epoch: 1 | Step: 45600 | Avg. loss: 30.456
+Epoch: 1 | Step: 45700 | Avg. loss: 30.523
+Epoch: 1 | Step: 45800 | Avg. loss: 30.551
+Epoch: 1 | Step: 45900 | Avg. loss: 30.669
+Epoch: 1 | Step: 46000 | Avg. loss: 30.521
+No improvement in loss 25.385290320215578 over best loss 25.38006609467135. Not saving model checkpoint
+Epoch: 1 | Step: 46100 | Avg. loss: 30.621
+Epoch: 1 | Step: 46200 | Avg. loss: 30.404
+Epoch: 1 | Step: 46300 | Avg. loss: 30.479
+Epoch: 1 | Step: 46400 | Avg. loss: 30.639
+Epoch: 1 | Step: 46500 | Avg. loss: 30.705
+No improvement in loss 25.384971837229813 over best loss 25.38006609467135. Not saving model checkpoint
+Epoch: 1 | Step: 46600 | Avg. loss: 30.644
+Epoch: 1 | Step: 46700 | Avg. loss: 30.550
+Epoch: 1 | Step: 46800 | Avg. loss: 30.673
+Epoch: 1 | Step: 46900 | Avg. loss: 30.595
+Epoch: 1 | Step: 47000 | Avg. loss: 30.768
+No improvement in loss 25.383890823322623 over best loss 25.38006609467135. Not saving model checkpoint
+Epoch: 1 | Step: 47100 | Avg. loss: 30.610
+Epoch: 1 | Step: 47200 | Avg. loss: 30.575
+Epoch: 1 | Step: 47300 | Avg. loss: 30.500
+Epoch: 1 | Step: 47400 | Avg. loss: 30.696
+Epoch: 1 | Step: 47500 | Avg. loss: 30.527
+No improvement in loss 25.385029021259218 over best loss 25.38006609467135. Not saving model checkpoint
+Epoch: 1 | Step: 47600 | Avg. loss: 30.737
+Epoch: 1 | Step: 47700 | Avg. loss: 30.563
+Epoch: 1 | Step: 47800 | Avg. loss: 30.590
+Epoch: 1 | Step: 47900 | Avg. loss: 30.555
+Epoch: 1 | Step: 48000 | Avg. loss: 30.490
+No improvement in loss 25.385277715581502 over best loss 25.38006609467135. Not saving model checkpoint
+Epoch: 1 | Step: 48100 | Avg. loss: 30.535
+Epoch: 1 | Step: 48200 | Avg. loss: 30.571
+Epoch: 1 | Step: 48300 | Avg. loss: 30.620
+Epoch: 1 | Step: 48400 | Avg. loss: 30.398
+Epoch: 1 | Step: 48500 | Avg. loss: 30.470
+No improvement in loss 25.385231504661487 over best loss 25.38006609467135. Not saving model checkpoint
+Epoch: 1 | Step: 48600 | Avg. loss: 30.542
+Epoch: 1 | Step: 48700 | Avg. loss: 30.564
+Epoch: 1 | Step: 48800 | Avg. loss: 30.558
+Epoch: 1 | Step: 48900 | Avg. loss: 30.709
+Epoch: 1 | Step: 49000 | Avg. loss: 30.438
+No improvement in loss 25.38464729912772 over best loss 25.38006609467135. Not saving model checkpoint
+Epoch: 1 | Step: 49100 | Avg. loss: 30.473
+Epoch: 1 | Step: 49200 | Avg. loss: 30.722
+Epoch: 1 | Step: 49300 | Avg. loss: 30.422
+Epoch: 1 | Step: 49400 | Avg. loss: 30.646
+Epoch: 1 | Step: 49500 | Avg. loss: 30.708
+No improvement in loss 25.384433015144214 over best loss 25.38006609467135. Not saving model checkpoint
+Epoch: 1 | Step: 49600 | Avg. loss: 30.483
+Epoch: 1 | Step: 49700 | Avg. loss: 30.920
+Epoch: 1 | Step: 49800 | Avg. loss: 30.685
+Epoch: 1 | Step: 49900 | Avg. loss: 30.619
+Epoch: 1 | Step: 50000 | Avg. loss: 30.473
+No improvement in loss 25.3845280651181 over best loss 25.38006609467135. Not saving model checkpoint
+Epoch: 1 | Step: 50100 | Avg. loss: 30.517
+Epoch: 1 | Step: 50200 | Avg. loss: 30.611
+Epoch: 1 | Step: 50300 | Avg. loss: 30.598
+Epoch: 1 | Step: 50400 | Avg. loss: 30.493
+Epoch: 1 | Step: 50500 | Avg. loss: 30.450
+No improvement in loss 25.384601447299264 over best loss 25.38006609467135. Not saving model checkpoint
+Epoch: 1 | Step: 50600 | Avg. loss: 30.440
+Epoch: 1 | Step: 50700 | Avg. loss: 30.517
+Epoch: 1 | Step: 50800 | Avg. loss: 30.550
+Epoch: 1 | Step: 50900 | Avg. loss: 30.406
+Epoch: 1 | Step: 51000 | Avg. loss: 30.524
+No improvement in loss 25.384885795770206 over best loss 25.38006609467135. Not saving model checkpoint
+Epoch: 1 | Step: 51100 | Avg. loss: 30.609
+Epoch: 1 | Step: 51200 | Avg. loss: 30.474
+Epoch: 1 | Step: 51300 | Avg. loss: 30.585
+Epoch: 1 | Step: 51400 | Avg. loss: 30.601
+Epoch: 1 | Step: 51500 | Avg. loss: 30.623
+No improvement in loss 25.385420110996552 over best loss 25.38006609467135. Not saving model checkpoint
+Epoch: 1 | Step: 51600 | Avg. loss: 30.643
+Epoch: 1 | Step: 51700 | Avg. loss: 30.400
+Epoch: 1 | Step: 51800 | Avg. loss: 30.590
+Epoch: 1 | Step: 51900 | Avg. loss: 30.718
+Epoch: 1 | Step: 52000 | Avg. loss: 30.674
+No improvement in loss 25.3856324199765 over best loss 25.38006609467135. Not saving model checkpoint
+Epoch: 1 | Step: 52100 | Avg. loss: 30.554
+Epoch: 1 | Step: 52200 | Avg. loss: 30.652
+Epoch: 1 | Step: 52300 | Avg. loss: 30.647
+Epoch: 1 | Step: 52400 | Avg. loss: 30.633
+Epoch: 1 | Step: 52500 | Avg. loss: 30.612
+No improvement in loss 25.38429730455677 over best loss 25.38006609467135. Not saving model checkpoint
+Epoch: 1 | Step: 52600 | Avg. loss: 30.524
+Epoch: 1 | Step: 52700 | Avg. loss: 30.654
+Epoch: 1 | Step: 52800 | Avg. loss: 30.643
+Epoch: 1 | Step: 52900 | Avg. loss: 30.500
+Epoch: 1 | Step: 53000 | Avg. loss: 30.789
+No improvement in loss 25.384683195272864 over best loss 25.38006609467135. Not saving model checkpoint
+Epoch: 1 | Step: 53100 | Avg. loss: 30.603
+Epoch: 1 | Step: 53200 | Avg. loss: 30.525
+Epoch: 1 | Step: 53300 | Avg. loss: 30.673
+Epoch: 1 | Step: 53400 | Avg. loss: 30.504
+Epoch: 1 | Step: 53500 | Avg. loss: 30.719
+No improvement in loss 25.384495403399082 over best loss 25.38006609467135. Not saving model checkpoint
+Epoch: 1 | Step: 53600 | Avg. loss: 30.383
+Epoch: 1 | Step: 53700 | Avg. loss: 30.578
+Epoch: 1 | Step: 53800 | Avg. loss: 30.532
+Epoch: 1 | Step: 53900 | Avg. loss: 30.575
+Epoch: 1 | Step: 54000 | Avg. loss: 30.687
+No improvement in loss 25.38612178110328 over best loss 25.38006609467135. Not saving model checkpoint
+Epoch: 1 | Step: 54100 | Avg. loss: 30.506
+Epoch: 1 | Step: 54200 | Avg. loss: 30.656
+Epoch: 1 | Step: 54300 | Avg. loss: 30.531
+Epoch: 1 | Step: 54400 | Avg. loss: 30.632
+Epoch: 1 | Step: 54500 | Avg. loss: 30.701
+No improvement in loss 25.38514288190605 over best loss 25.38006609467135. Not saving model checkpoint
+Epoch: 1 | Step: 54600 | Avg. loss: 30.719
+Epoch: 1 | Step: 54700 | Avg. loss: 30.577
+Epoch: 1 | Step: 54800 | Avg. loss: 30.802
+Epoch: 1 | Step: 54900 | Avg. loss: 30.699
+Epoch: 1 | Step: 55000 | Avg. loss: 30.501
+No improvement in loss 25.38487318072768 over best loss 25.38006609467135. Not saving model checkpoint
+Epoch: 1 | Step: 55100 | Avg. loss: 30.510
+Epoch: 1 | Step: 55200 | Avg. loss: 30.729
+Epoch: 1 | Step: 55300 | Avg. loss: 30.633
+Epoch: 1 | Step: 55400 | Avg. loss: 30.509
+Epoch: 1 | Step: 55500 | Avg. loss: 30.513
+No improvement in loss 25.384935285352263 over best loss 25.38006609467135. Not saving model checkpoint
+Epoch: 1 | Step: 55600 | Avg. loss: 30.620
+Epoch: 1 | Step: 55700 | Avg. loss: 30.526
+Epoch: 1 | Step: 55800 | Avg. loss: 30.529
+Epoch: 1 | Step: 55900 | Avg. loss: 30.573
+Epoch: 1 | Step: 56000 | Avg. loss: 30.495
+No improvement in loss 25.38492722660913 over best loss 25.38006609467135. Not saving model checkpoint
+Epoch: 1 | Step: 56100 | Avg. loss: 30.512
+Epoch: 1 | Step: 56200 | Avg. loss: 30.590
+Epoch: 1 | Step: 56300 | Avg. loss: 30.374
+Epoch: 1 | Step: 56400 | Avg. loss: 30.674
+Epoch: 1 | Step: 56500 | Avg. loss: 30.608
+No improvement in loss 25.3848368682445 over best loss 25.38006609467135. Not saving model checkpoint
+Epoch: 1 | Step: 56600 | Avg. loss: 30.410
+Epoch: 1 | Step: 56700 | Avg. loss: 30.575
+Epoch: 1 | Step: 56800 | Avg. loss: 30.563
+Epoch: 1 | Step: 56900 | Avg. loss: 30.714
+Epoch: 1 | Step: 57000 | Avg. loss: 30.470
+No improvement in loss 25.385765786060368 over best loss 25.38006609467135. Not saving model checkpoint
+Epoch: 1 | Step: 57100 | Avg. loss: 30.550
+Epoch: 1 | Step: 57200 | Avg. loss: 30.585
+Epoch: 1 | Step: 57300 | Avg. loss: 30.559
+Epoch: 1 | Step: 57400 | Avg. loss: 30.645
+Epoch: 1 | Step: 57500 | Avg. loss: 30.700
+No improvement in loss 25.384503620871094 over best loss 25.38006609467135. Not saving model checkpoint
+Epoch: 1 | Step: 57600 | Avg. loss: 30.556
+Epoch: 1 | Step: 57700 | Avg. loss: 30.603
+Epoch: 1 | Step: 57800 | Avg. loss: 30.743
+Epoch: 1 | Step: 57900 | Avg. loss: 30.702
+Epoch: 1 | Step: 58000 | Avg. loss: 30.724
+No improvement in loss 25.38532633866002 over best loss 25.38006609467135. Not saving model checkpoint
+Epoch: 1 | Step: 58100 | Avg. loss: 30.575
+Epoch: 1 | Step: 58200 | Avg. loss: 30.418
+Epoch: 1 | Step: 58300 | Avg. loss: 30.852
+Epoch: 1 | Step: 58400 | Avg. loss: 30.480
+Epoch: 1 | Step: 58500 | Avg. loss: 30.665
+No improvement in loss 25.386536534453803 over best loss 25.38006609467135. Not saving model checkpoint
+Epoch: 1 | Step: 58600 | Avg. loss: 30.627
+Epoch: 1 | Step: 58700 | Avg. loss: 30.566
+Epoch: 1 | Step: 58800 | Avg. loss: 30.558
+Epoch: 1 | Step: 58900 | Avg. loss: 30.643
+Epoch: 1 | Step: 59000 | Avg. loss: 30.543
+No improvement in loss 25.384901707689565 over best loss 25.38006609467135. Not saving model checkpoint
+Epoch: 1 | Step: 59100 | Avg. loss: 30.513
+Epoch: 1 | Step: 59200 | Avg. loss: 30.491
+Epoch: 1 | Step: 59300 | Avg. loss: 30.516
+Epoch: 1 | Step: 59400 | Avg. loss: 30.554
+Epoch: 1 | Step: 59500 | Avg. loss: 30.587
+No improvement in loss 25.385027376723972 over best loss 25.38006609467135. Not saving model checkpoint
+Epoch: 1 | Step: 59600 | Avg. loss: 30.460
+Epoch: 1 | Step: 59700 | Avg. loss: 30.682
+Epoch: 1 | Step: 59800 | Avg. loss: 30.631
+Epoch: 1 | Step: 59900 | Avg. loss: 30.469
+Epoch: 1 | Step: 60000 | Avg. loss: 30.525
+No improvement in loss 25.384381693674793 over best loss 25.38006609467135. Not saving model checkpoint
+Epoch: 1 | Step: 60100 | Avg. loss: 30.620
+Epoch: 1 | Step: 60200 | Avg. loss: 30.696
+Epoch: 1 | Step: 60300 | Avg. loss: 30.521
+Epoch: 1 | Step: 60400 | Avg. loss: 30.625
+Epoch: 1 | Step: 60500 | Avg. loss: 30.397
+No improvement in loss 25.38475356941171 over best loss 25.38006609467135. Not saving model checkpoint
+Epoch: 1 | Step: 60600 | Avg. loss: 30.599
+Epoch: 1 | Step: 60700 | Avg. loss: 30.546
+Epoch: 1 | Step: 60800 | Avg. loss: 30.622
+Epoch: 1 | Step: 60900 | Avg. loss: 30.695
+Epoch: 1 | Step: 61000 | Avg. loss: 30.465
+No improvement in loss 25.385712851281056 over best loss 25.38006609467135. Not saving model checkpoint
+Epoch: 1 | Step: 61100 | Avg. loss: 30.592
+Epoch: 1 | Step: 61200 | Avg. loss: 30.534
+Epoch: 1 | Step: 61300 | Avg. loss: 30.512
+Epoch: 1 | Step: 61400 | Avg. loss: 30.730
+Epoch: 1 | Step: 61500 | Avg. loss: 30.585
+No improvement in loss 25.384981928222988 over best loss 25.38006609467135. Not saving model checkpoint
+Epoch: 1 | Step: 61600 | Avg. loss: 30.606
+Epoch: 1 | Step: 61700 | Avg. loss: 30.686
+Epoch: 1 | Step: 61800 | Avg. loss: 30.578
+Epoch: 1 | Step: 61900 | Avg. loss: 30.543
+Epoch: 1 | Step: 62000 | Avg. loss: 30.701
+No improvement in loss 25.385239940710967 over best loss 25.38006609467135. Not saving model checkpoint
+Epoch: 1 | Step: 62100 | Avg. loss: 30.558
+Epoch: 1 | Step: 62200 | Avg. loss: 30.548
+Epoch: 1 | Step: 62300 | Avg. loss: 30.546
+Epoch: 1 | Step: 62400 | Avg. loss: 30.652
+Epoch: 1 | Step: 62500 | Avg. loss: 30.650
+No improvement in loss 25.383975381577976 over best loss 25.38006609467135. Not saving model checkpoint
+Epoch: 1 | Step: 62600 | Avg. loss: 30.772
+Epoch: 1 | Step: 62700 | Avg. loss: 30.440
+Epoch: 1 | Step: 62800 | Avg. loss: 30.554
+Epoch: 1 | Step: 62900 | Avg. loss: 30.488
+Epoch: 1 | Step: 63000 | Avg. loss: 30.555
+No improvement in loss 25.38556721363354 over best loss 25.38006609467135. Not saving model checkpoint
+Epoch: 1 | Step: 63100 | Avg. loss: 30.544
+Epoch: 1 | Step: 63200 | Avg. loss: 30.575
+Epoch: 1 | Step: 63300 | Avg. loss: 30.408
+Epoch: 1 | Step: 63400 | Avg. loss: 30.521
+Epoch: 1 | Step: 63500 | Avg. loss: 30.766
+No improvement in loss 25.387061541922908 over best loss 25.38006609467135. Not saving model checkpoint
+Epoch: 1 | Step: 63600 | Avg. loss: 30.505
+Epoch: 1 | Step: 63700 | Avg. loss: 30.533
+Epoch: 1 | Step: 63800 | Avg. loss: 30.578
+Epoch: 1 | Step: 63900 | Avg. loss: 30.689
+Epoch: 1 | Step: 64000 | Avg. loss: 30.608
+No improvement in loss 25.38517028215312 over best loss 25.38006609467135. Not saving model checkpoint
+Epoch: 1 | Step: 64100 | Avg. loss: 30.778
+Epoch: 1 | Step: 64200 | Avg. loss: 30.769
+Epoch: 1 | Step: 64300 | Avg. loss: 30.432
+Epoch: 1 | Step: 64400 | Avg. loss: 30.551
+Epoch: 1 | Step: 64500 | Avg. loss: 30.535
+No improvement in loss 25.38546073518053 over best loss 25.38006609467135. Not saving model checkpoint
+Epoch: 1 | Step: 64600 | Avg. loss: 30.603
+Epoch: 1 | Step: 64700 | Avg. loss: 30.509
+Epoch: 1 | Step: 64800 | Avg. loss: 30.398
+Epoch: 1 | Step: 64900 | Avg. loss: 30.720
+Epoch: 1 | Step: 65000 | Avg. loss: 30.516
+No improvement in loss 25.38474257028119 over best loss 25.38006609467135. Not saving model checkpoint
+Epoch: 1 | Step: 65100 | Avg. loss: 30.543
+Epoch: 1 | Step: 65200 | Avg. loss: 30.539
+Epoch: 1 | Step: 65300 | Avg. loss: 30.549
+Epoch: 1 | Step: 65400 | Avg. loss: 30.591
+Epoch: 1 | Step: 65500 | Avg. loss: 30.674
+No improvement in loss 25.38386681102633 over best loss 25.38006609467135. Not saving model checkpoint
+Epoch: 1 | Step: 65600 | Avg. loss: 30.430
+Epoch: 1 | Step: 65700 | Avg. loss: 30.508
+Epoch: 1 | Step: 65800 | Avg. loss: 30.502
+Epoch: 1 | Step: 65900 | Avg. loss: 30.497
+Epoch: 1 | Step: 66000 | Avg. loss: 30.576
+No improvement in loss 25.38537391829133 over best loss 25.38006609467135. Not saving model checkpoint
+Epoch: 1 | Step: 66100 | Avg. loss: 30.509
+Epoch: 1 | Step: 66200 | Avg. loss: 30.486
+Epoch: 1 | Step: 66300 | Avg. loss: 30.685
+Epoch: 1 | Step: 66400 | Avg. loss: 30.564
+Epoch: 1 | Step: 66500 | Avg. loss: 30.580
+No improvement in loss 25.38420345155474 over best loss 25.38006609467135. Not saving model checkpoint
+Epoch: 1 | Step: 66600 | Avg. loss: 30.424
+Epoch: 1 | Step: 66700 | Avg. loss: 30.608
+Epoch: 1 | Step: 66800 | Avg. loss: 30.655
+Epoch: 1 | Step: 66900 | Avg. loss: 30.540
+Epoch: 1 | Step: 67000 | Avg. loss: 30.671
+No improvement in loss 25.384611657989627 over best loss 25.38006609467135. Not saving model checkpoint
+Epoch: 1 | Step: 67100 | Avg. loss: 30.603
+Epoch: 1 | Step: 67200 | Avg. loss: 30.670
+Epoch: 1 | Step: 67300 | Avg. loss: 30.698
+Epoch: 1 | Step: 67400 | Avg. loss: 30.695
+Epoch: 1 | Step: 67500 | Avg. loss: 30.575
+No improvement in loss 25.38520129933689 over best loss 25.38006609467135. Not saving model checkpoint
+Epoch: 1 | Step: 67600 | Avg. loss: 30.337
+Epoch: 1 | Step: 67700 | Avg. loss: 30.668
+Epoch: 1 | Step: 67800 | Avg. loss: 30.634
+Epoch: 1 | Step: 67900 | Avg. loss: 30.568
+Epoch: 1 | Step: 68000 | Avg. loss: 30.656
+No improvement in loss 25.384554611872197 over best loss 25.38006609467135. Not saving model checkpoint
+Epoch: 1 | Step: 68100 | Avg. loss: 30.594
+Epoch: 1 | Step: 68200 | Avg. loss: 30.645
+Epoch: 1 | Step: 68300 | Avg. loss: 30.504
+Epoch: 1 | Step: 68400 | Avg. loss: 30.690
+Epoch: 1 | Step: 68500 | Avg. loss: 30.664
+No improvement in loss 25.386185910171573 over best loss 25.38006609467135. Not saving model checkpoint
+Epoch: 1 | Step: 68600 | Avg. loss: 30.618
+Epoch: 1 | Step: 68700 | Avg. loss: 30.503
+Epoch: 1 | Step: 68800 | Avg. loss: 30.611
+Epoch: 1 | Step: 68900 | Avg. loss: 30.765
+Epoch: 1 | Step: 69000 | Avg. loss: 30.667
+No improvement in loss 25.384497745300543 over best loss 25.38006609467135. Not saving model checkpoint
+Epoch: 1 | Step: 69100 | Avg. loss: 30.431
+Epoch: 1 | Step: 69200 | Avg. loss: 30.613
+Epoch: 1 | Step: 69300 | Avg. loss: 30.763
+Epoch: 1 | Step: 69400 | Avg. loss: 30.607
+Epoch: 1 | Step: 69500 | Avg. loss: 30.611
+No improvement in loss 25.38603207847106 over best loss 25.38006609467135. Not saving model checkpoint
+Epoch: 1 | Step: 69600 | Avg. loss: 30.626
+Epoch: 1 | Step: 69700 | Avg. loss: 30.540
+Epoch: 1 | Step: 69800 | Avg. loss: 30.318
+Epoch: 1 | Step: 69900 | Avg. loss: 30.551
+Epoch: 1 | Step: 70000 | Avg. loss: 30.671
+No improvement in loss 25.38488415123496 over best loss 25.38006609467135. Not saving model checkpoint
+Epoch: 1 | Step: 70100 | Avg. loss: 30.630
+Epoch: 1 | Step: 70200 | Avg. loss: 30.599
+Epoch: 1 | Step: 70300 | Avg. loss: 30.584
+Epoch: 1 | Step: 70400 | Avg. loss: 30.616
+Epoch: 1 | Step: 70500 | Avg. loss: 30.616
+No improvement in loss 25.3835804615307 over best loss 25.38006609467135. Not saving model checkpoint
+Epoch: 1 | Step: 70600 | Avg. loss: 30.638
+Epoch: 1 | Step: 70700 | Avg. loss: 30.531
+Epoch: 1 | Step: 70800 | Avg. loss: 30.658
+Epoch: 1 | Step: 70900 | Avg. loss: 30.570
+Epoch: 1 | Step: 71000 | Avg. loss: 30.504
+No improvement in loss 25.3865060819285 over best loss 25.38006609467135. Not saving model checkpoint
+Epoch: 1 | Step: 71100 | Avg. loss: 30.482
+Epoch: 1 | Step: 71200 | Avg. loss: 30.500
+Epoch: 1 | Step: 71300 | Avg. loss: 30.442
+Epoch: 1 | Step: 71400 | Avg. loss: 30.582
+Epoch: 1 | Step: 71500 | Avg. loss: 30.636
+No improvement in loss 25.3862455922292 over best loss 25.38006609467135. Not saving model checkpoint
+Epoch: 1 | Step: 71600 | Avg. loss: 30.584
+Epoch: 1 | Step: 71700 | Avg. loss: 30.653
+Epoch: 1 | Step: 71800 | Avg. loss: 30.695
+Epoch: 1 | Step: 71900 | Avg. loss: 30.653
+Epoch: 1 | Step: 72000 | Avg. loss: 30.783
+No improvement in loss 25.384900888024053 over best loss 25.38006609467135. Not saving model checkpoint
+Epoch: 1 | Step: 72100 | Avg. loss: 30.624
+Epoch: 1 | Step: 72200 | Avg. loss: 30.365
+Epoch: 1 | Step: 72300 | Avg. loss: 30.569
+Epoch: 1 | Step: 72400 | Avg. loss: 30.707
+Epoch: 1 | Step: 72500 | Avg. loss: 30.585
+No improvement in loss 25.3860993248704 over best loss 25.38006609467135. Not saving model checkpoint
+Epoch: 1 | Step: 72600 | Avg. loss: 30.563
+Epoch: 1 | Step: 72700 | Avg. loss: 30.385
+Epoch: 1 | Step: 72800 | Avg. loss: 30.474
+Epoch: 1 | Step: 72900 | Avg. loss: 30.581
+Epoch: 1 | Step: 73000 | Avg. loss: 30.569
+No improvement in loss 25.38463839469795 over best loss 25.38006609467135. Not saving model checkpoint
+Epoch: 1 | Step: 73100 | Avg. loss: 30.595
+Epoch: 1 | Step: 73200 | Avg. loss: 30.478
+Epoch: 1 | Step: 73300 | Avg. loss: 30.730
+Epoch: 1 | Step: 73400 | Avg. loss: 30.523
+Epoch: 1 | Step: 73500 | Avg. loss: 30.585
+No improvement in loss 25.384259147175662 over best loss 25.38006609467135. Not saving model checkpoint
+Epoch: 1 | Step: 73600 | Avg. loss: 30.734
+Epoch: 1 | Step: 73700 | Avg. loss: 30.546
+Epoch: 1 | Step: 73800 | Avg. loss: 30.679
+Epoch: 1 | Step: 73900 | Avg. loss: 30.473
+Epoch: 1 | Step: 74000 | Avg. loss: 30.815
+No improvement in loss 25.384340921170388 over best loss 25.38006609467135. Not saving model checkpoint
+Epoch: 1 | Step: 74100 | Avg. loss: 30.533
+Epoch: 1 | Step: 74200 | Avg. loss: 30.670
+Epoch: 1 | Step: 74300 | Avg. loss: 30.688
+Epoch: 1 | Step: 74400 | Avg. loss: 30.574
+Epoch: 1 | Step: 74500 | Avg. loss: 30.526
+No improvement in loss 25.385092463369748 over best loss 25.38006609467135. Not saving model checkpoint
+Epoch: 1 | Step: 74600 | Avg. loss: 30.575
+Epoch: 1 | Step: 74700 | Avg. loss: 30.468
+Epoch: 1 | Step: 74800 | Avg. loss: 30.473
+Epoch: 1 | Step: 74900 | Avg. loss: 30.433
+Epoch: 1 | Step: 75000 | Avg. loss: 30.536
+No improvement in loss 25.384694100727327 over best loss 25.38006609467135. Not saving model checkpoint
+Epoch: 1 | Step: 75100 | Avg. loss: 30.494
+Epoch: 1 | Step: 75200 | Avg. loss: 30.577
+Epoch: 1 | Step: 75300 | Avg. loss: 30.449
+Epoch: 1 | Step: 75400 | Avg. loss: 30.513
+Epoch: 1 | Step: 75500 | Avg. loss: 30.729
+No improvement in loss 25.38518523389288 over best loss 25.38006609467135. Not saving model checkpoint
+Epoch: 1 | Step: 75600 | Avg. loss: 30.567
+Epoch: 1 | Step: 75700 | Avg. loss: 30.753
+Epoch: 1 | Step: 75800 | Avg. loss: 30.706
+Epoch: 1 | Step: 75900 | Avg. loss: 30.574
+Epoch: 1 | Step: 76000 | Avg. loss: 30.685
+No improvement in loss 25.385240018774347 over best loss 25.38006609467135. Not saving model checkpoint
+Epoch: 1 | Step: 76100 | Avg. loss: 30.695
+Epoch: 1 | Step: 76200 | Avg. loss: 30.386
+Epoch: 1 | Step: 76300 | Avg. loss: 30.758
+Epoch: 1 | Step: 76400 | Avg. loss: 30.566
+Epoch: 1 | Step: 76500 | Avg. loss: 30.580
+No improvement in loss 25.385281540687217 over best loss 25.38006609467135. Not saving model checkpoint
+Epoch: 1 | Step: 76600 | Avg. loss: 30.461
+Epoch: 1 | Step: 76700 | Avg. loss: 30.634
+Epoch: 1 | Step: 76800 | Avg. loss: 30.488
+Epoch: 1 | Step: 76900 | Avg. loss: 30.614
+Epoch: 1 | Step: 77000 | Avg. loss: 30.652
+No improvement in loss 25.38408301016481 over best loss 25.38006609467135. Not saving model checkpoint
+Epoch: 1 | Step: 77100 | Avg. loss: 30.637
+Epoch: 1 | Step: 77200 | Avg. loss: 30.408
+Epoch: 1 | Step: 77300 | Avg. loss: 30.589
+Epoch: 1 | Step: 77400 | Avg. loss: 30.604
+Epoch: 1 | Step: 77500 | Avg. loss: 30.411
+No improvement in loss 25.385398669587637 over best loss 25.38006609467135. Not saving model checkpoint
+Epoch: 1 | Step: 77600 | Avg. loss: 30.463
+Epoch: 1 | Step: 77700 | Avg. loss: 30.675
+Epoch: 1 | Step: 77800 | Avg. loss: 30.732
+Epoch: 1 | Step: 77900 | Avg. loss: 30.517
+Epoch: 1 | Step: 78000 | Avg. loss: 30.722
+No improvement in loss 25.384613404007272 over best loss 25.38006609467135. Not saving model checkpoint
+Epoch: 1 | Step: 78100 | Avg. loss: 30.619
+Epoch: 1 | Step: 78200 | Avg. loss: 30.478
+Epoch: 1 | Step: 78300 | Avg. loss: 30.474
+Epoch: 1 | Step: 78400 | Avg. loss: 30.438
+Epoch: 1 | Step: 78500 | Avg. loss: 30.668
+No improvement in loss 25.385113178789208 over best loss 25.38006609467135. Not saving model checkpoint
+Epoch: 1 | Step: 78600 | Avg. loss: 30.602
+Epoch: 1 | Step: 78700 | Avg. loss: 30.745
+Epoch: 1 | Step: 78800 | Avg. loss: 30.639
+Epoch: 1 | Step: 78900 | Avg. loss: 30.565
+Epoch: 1 | Step: 79000 | Avg. loss: 30.594
+No improvement in loss 25.38583619402668 over best loss 25.38006609467135. Not saving model checkpoint
+Epoch: 1 | Step: 79100 | Avg. loss: 30.731
+Epoch: 1 | Step: 79200 | Avg. loss: 30.676
+Epoch: 1 | Step: 79300 | Avg. loss: 30.452
+Epoch: 1 | Step: 79400 | Avg. loss: 30.475
+Epoch: 1 | Step: 79500 | Avg. loss: 30.466
+No improvement in loss 25.386386616330842 over best loss 25.38006609467135. Not saving model checkpoint
+Epoch: 1 | Step: 79600 | Avg. loss: 30.656
+Epoch: 1 | Step: 79700 | Avg. loss: 30.640
+Epoch: 1 | Step: 79800 | Avg. loss: 30.705
+Epoch: 1 | Step: 79900 | Avg. loss: 30.530
+Epoch: 1 | Step: 80000 | Avg. loss: 30.510
+No improvement in loss 25.38539294493963 over best loss 25.38006609467135. Not saving model checkpoint
+Epoch: 1 | Step: 80100 | Avg. loss: 30.538
+Epoch: 1 | Step: 80200 | Avg. loss: 30.485
+Epoch: 1 | Step: 80300 | Avg. loss: 30.640
+Epoch: 1 | Step: 80400 | Avg. loss: 30.512
+Epoch: 1 | Step: 80500 | Avg. loss: 30.514
+No improvement in loss 25.385339375244808 over best loss 25.38006609467135. Not saving model checkpoint
+Epoch: 1 | Step: 80600 | Avg. loss: 30.535
+Epoch: 1 | Step: 80700 | Avg. loss: 30.550
+Epoch: 1 | Step: 80800 | Avg. loss: 30.496
+Epoch: 1 | Step: 80900 | Avg. loss: 30.712
+Epoch: 1 | Step: 81000 | Avg. loss: 30.558
+No improvement in loss 25.38432361972283 over best loss 25.38006609467135. Not saving model checkpoint
+Epoch: 1 | Step: 81100 | Avg. loss: 30.625
+Epoch: 1 | Step: 81200 | Avg. loss: 30.635
+Epoch: 1 | Step: 81300 | Avg. loss: 30.611
+Epoch: 1 | Step: 81400 | Avg. loss: 30.482
+Epoch: 1 | Step: 81500 | Avg. loss: 30.509
+No improvement in loss 25.384366351618123 over best loss 25.38006609467135. Not saving model checkpoint
+Epoch: 1 | Step: 81600 | Avg. loss: 30.514
+Epoch: 1 | Step: 81700 | Avg. loss: 30.755
+Epoch: 1 | Step: 81800 | Avg. loss: 30.644
+Epoch: 1 | Step: 81900 | Avg. loss: 30.433
+Epoch: 1 | Step: 82000 | Avg. loss: 30.356
+No improvement in loss 25.384850872815225 over best loss 25.38006609467135. Not saving model checkpoint
+Epoch: 1 | Step: 82100 | Avg. loss: 30.718
+Epoch: 1 | Step: 82200 | Avg. loss: 30.652
+Epoch: 1 | Step: 82300 | Avg. loss: 30.582
+Epoch: 1 | Step: 82400 | Avg. loss: 30.635
+Epoch: 1 | Step: 82500 | Avg. loss: 30.443
+No improvement in loss 25.38418392790291 over best loss 25.38006609467135. Not saving model checkpoint
+Epoch: 1 | Step: 82600 | Avg. loss: 30.669
+Epoch: 1 | Step: 82700 | Avg. loss: 30.576
+Epoch: 1 | Step: 82800 | Avg. loss: 30.631
+Epoch: 1 | Step: 82900 | Avg. loss: 30.458
+Epoch: 1 | Step: 83000 | Avg. loss: 30.653
+No improvement in loss 25.385370199872234 over best loss 25.38006609467135. Not saving model checkpoint
+Epoch: 1 | Step: 83100 | Avg. loss: 30.565
+Epoch: 1 | Step: 83200 | Avg. loss: 30.563
+Epoch: 1 | Step: 83300 | Avg. loss: 30.502
+Epoch: 1 | Step: 83400 | Avg. loss: 30.487
+Epoch: 1 | Step: 83500 | Avg. loss: 30.585
+No improvement in loss 25.384060119379104 over best loss 25.38006609467135. Not saving model checkpoint
+Epoch: 1 | Step: 83600 | Avg. loss: 30.472
+Epoch: 1 | Step: 83700 | Avg. loss: 30.438
+Epoch: 1 | Step: 83800 | Avg. loss: 30.433
+Epoch: 1 | Step: 83900 | Avg. loss: 30.722
+Epoch: 1 | Step: 84000 | Avg. loss: 30.453
+No improvement in loss 25.384499249321703 over best loss 25.38006609467135. Not saving model checkpoint
+Epoch: 1 | Step: 84100 | Avg. loss: 30.580
+Epoch: 1 | Step: 84200 | Avg. loss: 30.601
+Epoch: 1 | Step: 84300 | Avg. loss: 30.591
+Epoch: 1 | Step: 84400 | Avg. loss: 30.740
+Epoch: 1 | Step: 84500 | Avg. loss: 30.531
+No improvement in loss 25.385369106984886 over best loss 25.38006609467135. Not saving model checkpoint
+Epoch: 1 | Step: 84600 | Avg. loss: 30.655
+Epoch: 1 | Step: 84700 | Avg. loss: 30.737
+Epoch: 1 | Step: 84800 | Avg. loss: 30.439
+Epoch: 1 | Step: 84900 | Avg. loss: 30.600
+Epoch: 1 | Step: 85000 | Avg. loss: 30.535
+No improvement in loss 25.385733688999817 over best loss 25.38006609467135. Not saving model checkpoint
+Epoch: 1 | Step: 85100 | Avg. loss: 30.683
+Epoch: 1 | Step: 85200 | Avg. loss: 30.623
+Epoch: 1 | Step: 85300 | Avg. loss: 30.551
+Epoch: 1 | Step: 85400 | Avg. loss: 30.568
+Epoch: 1 | Step: 85500 | Avg. loss: 30.435
+No improvement in loss 25.383921210795112 over best loss 25.38006609467135. Not saving model checkpoint
+Epoch: 1 | Step: 85600 | Avg. loss: 30.539
+Epoch: 1 | Step: 85700 | Avg. loss: 30.648
+Epoch: 1 | Step: 85800 | Avg. loss: 30.589
+Epoch: 1 | Step: 85900 | Avg. loss: 30.460
+Epoch: 1 | Step: 86000 | Avg. loss: 30.397
+No improvement in loss 25.38488125508349 over best loss 25.38006609467135. Not saving model checkpoint
+Epoch: 1 | Step: 86100 | Avg. loss: 30.528
+Epoch: 1 | Step: 86200 | Avg. loss: 30.600
+Epoch: 1 | Step: 86300 | Avg. loss: 30.633
+Epoch: 1 | Step: 86400 | Avg. loss: 30.506
+Epoch: 1 | Step: 86500 | Avg. loss: 30.732
+No improvement in loss 25.385331004248147 over best loss 25.38006609467135. Not saving model checkpoint
+Epoch: 1 | Step: 86600 | Avg. loss: 30.648
+Epoch: 1 | Step: 86700 | Avg. loss: 30.448
+Epoch: 1 | Step: 86800 | Avg. loss: 30.720
+Epoch: 1 | Step: 86900 | Avg. loss: 30.646
+Epoch: 1 | Step: 87000 | Avg. loss: 30.598
+No improvement in loss 25.384607598693766 over best loss 25.38006609467135. Not saving model checkpoint
+Epoch: 1 | Step: 87100 | Avg. loss: 30.507
+Epoch: 1 | Step: 87200 | Avg. loss: 30.632
+Epoch: 1 | Step: 87300 | Avg. loss: 30.474
+Epoch: 1 | Step: 87400 | Avg. loss: 30.756
+Epoch: 1 | Step: 87500 | Avg. loss: 30.492
+No improvement in loss 25.38502104057947 over best loss 25.38006609467135. Not saving model checkpoint
+Epoch: 1 | Step: 87600 | Avg. loss: 30.659
+Epoch: 1 | Step: 87700 | Avg. loss: 30.597
+Epoch: 1 | Step: 87800 | Avg. loss: 30.545
+Epoch: 1 | Step: 87900 | Avg. loss: 30.427
+Epoch: 1 | Step: 88000 | Avg. loss: 30.313
+No improvement in loss 25.38433645594494 over best loss 25.38006609467135. Not saving model checkpoint
+Epoch: 1 | Step: 88100 | Avg. loss: 30.645
+Epoch: 1 | Step: 88200 | Avg. loss: 30.572
+Epoch: 1 | Step: 88300 | Avg. loss: 30.491
+Epoch: 1 | Step: 88400 | Avg. loss: 30.530
+Epoch: 1 | Step: 88500 | Avg. loss: 30.564
+No improvement in loss 25.384933440454336 over best loss 25.38006609467135. Not saving model checkpoint
+Epoch: 1 | Step: 88600 | Avg. loss: 30.508
+Epoch: 1 | Step: 88700 | Avg. loss: 30.549
+Epoch: 1 | Step: 88800 | Avg. loss: 30.560
+Epoch: 1 | Step: 88900 | Avg. loss: 30.497
+Epoch: 1 | Step: 89000 | Avg. loss: 30.607
+No improvement in loss 25.386045180108667 over best loss 25.38006609467135. Not saving model checkpoint
+Epoch: 1 | Step: 89100 | Avg. loss: 30.664
+Epoch: 1 | Step: 89200 | Avg. loss: 30.673
+Epoch: 1 | Step: 89300 | Avg. loss: 30.498
+Epoch: 1 | Step: 89400 | Avg. loss: 30.678
+Epoch: 1 | Step: 89500 | Avg. loss: 30.639
+No improvement in loss 25.384686546794065 over best loss 25.38006609467135. Not saving model checkpoint
+Epoch: 1 | Step: 89600 | Avg. loss: 30.552
+Epoch: 1 | Step: 89700 | Avg. loss: 30.737
+Epoch: 1 | Step: 89800 | Avg. loss: 30.472
+Epoch: 1 | Step: 89900 | Avg. loss: 30.504
+Epoch: 1 | Step: 90000 | Avg. loss: 30.612
+No improvement in loss 25.385282719444284 over best loss 25.38006609467135. Not saving model checkpoint
+Epoch: 1 | Step: 90100 | Avg. loss: 30.668
+Epoch: 1 | Step: 90200 | Avg. loss: 30.587
+Epoch: 1 | Step: 90300 | Avg. loss: 30.520
+Epoch: 1 | Step: 90400 | Avg. loss: 30.759
+Epoch: 1 | Step: 90500 | Avg. loss: 30.560
+No improvement in loss 25.385040566833414 over best loss 25.38006609467135. Not saving model checkpoint
+Epoch: 1 | Step: 90600 | Avg. loss: 30.724
+Epoch: 1 | Step: 90700 | Avg. loss: 30.797
+Epoch: 1 | Step: 90800 | Avg. loss: 30.654
+Epoch: 1 | Step: 90900 | Avg. loss: 30.671
+Epoch: 1 | Step: 91000 | Avg. loss: 30.598
+No improvement in loss 25.3858513617418 over best loss 25.38006609467135. Not saving model checkpoint
+Epoch: 1 | Step: 91100 | Avg. loss: 30.667
+Epoch: 1 | Step: 91200 | Avg. loss: 30.545
+Epoch: 1 | Step: 91300 | Avg. loss: 30.672
+Epoch: 1 | Step: 91400 | Avg. loss: 30.503
+Epoch: 1 | Step: 91500 | Avg. loss: 30.682
+No improvement in loss 25.384529566537147 over best loss 25.38006609467135. Not saving model checkpoint
+Epoch: 1 | Step: 91600 | Avg. loss: 30.618
+Epoch: 1 | Step: 91700 | Avg. loss: 30.549
+Epoch: 1 | Step: 91800 | Avg. loss: 30.498
+Epoch: 1 | Step: 91900 | Avg. loss: 30.558
+Epoch: 1 | Step: 92000 | Avg. loss: 30.556
+No improvement in loss 25.38588390376363 over best loss 25.38006609467135. Not saving model checkpoint
+Epoch: 1 | Step: 92100 | Avg. loss: 30.570
+Epoch: 1 | Step: 92200 | Avg. loss: 30.773
+Epoch: 1 | Step: 92300 | Avg. loss: 30.548
+Epoch: 1 | Step: 92400 | Avg. loss: 30.571
+Epoch: 1 | Step: 92500 | Avg. loss: 30.604
+No improvement in loss 25.38621673740111 over best loss 25.38006609467135. Not saving model checkpoint
+Epoch: 1 | Step: 92600 | Avg. loss: 30.769
+Epoch: 1 | Step: 92700 | Avg. loss: 30.370
+Epoch: 1 | Step: 92800 | Avg. loss: 30.648
+Epoch: 1 | Step: 92900 | Avg. loss: 30.630
+Epoch: 1 | Step: 93000 | Avg. loss: 30.560
+No improvement in loss 25.38431882663118 over best loss 25.38006609467135. Not saving model checkpoint
+Epoch: 1 | Step: 93100 | Avg. loss: 30.602
+Epoch: 1 | Step: 93200 | Avg. loss: 30.642
+Epoch: 1 | Step: 93300 | Avg. loss: 30.580
+Epoch: 1 | Step: 93400 | Avg. loss: 30.555
+Epoch: 1 | Step: 93500 | Avg. loss: 30.508
+No improvement in loss 25.384952745528697 over best loss 25.38006609467135. Not saving model checkpoint
+Epoch: 1 | Step: 93600 | Avg. loss: 30.704
+Epoch: 1 | Step: 93700 | Avg. loss: 30.535
+Epoch: 1 | Step: 93800 | Avg. loss: 30.557
+Epoch: 1 | Step: 93900 | Avg. loss: 30.561
+Epoch: 1 | Step: 94000 | Avg. loss: 30.661
+No improvement in loss 25.384436301612595 over best loss 25.38006609467135. Not saving model checkpoint
+Epoch: 1 | Step: 94100 | Avg. loss: 30.607
+Epoch: 1 | Step: 94200 | Avg. loss: 30.554
+Epoch: 1 | Step: 94300 | Avg. loss: 30.817
+Epoch: 1 | Step: 94400 | Avg. loss: 30.716
+Epoch: 1 | Step: 94500 | Avg. loss: 30.534
+No improvement in loss 25.384999424829 over best loss 25.38006609467135. Not saving model checkpoint
+Epoch: 1 | Step: 94600 | Avg. loss: 30.433
+Epoch: 1 | Step: 94700 | Avg. loss: 30.579
+Epoch: 1 | Step: 94800 | Avg. loss: 30.554
+Epoch: 1 | Step: 94900 | Avg. loss: 30.510
+Epoch: 1 | Step: 95000 | Avg. loss: 30.610
+No improvement in loss 25.384267208520907 over best loss 25.38006609467135. Not saving model checkpoint
+Epoch: 1 | Step: 95100 | Avg. loss: 30.464
+Epoch: 1 | Step: 95200 | Avg. loss: 30.552
+Epoch: 1 | Step: 95300 | Avg. loss: 30.480
+Epoch: 1 | Step: 95400 | Avg. loss: 30.475
+Epoch: 1 | Step: 95500 | Avg. loss: 30.729
+No improvement in loss 25.38559225116225 over best loss 25.38006609467135. Not saving model checkpoint
+Epoch: 1 | Step: 95600 | Avg. loss: 30.579
+Epoch: 1 | Step: 95700 | Avg. loss: 30.521
+Epoch: 1 | Step: 95800 | Avg. loss: 30.402
+Epoch: 1 | Step: 95900 | Avg. loss: 30.552
+Epoch: 1 | Step: 96000 | Avg. loss: 30.627
+No improvement in loss 25.38454162732966 over best loss 25.38006609467135. Not saving model checkpoint
+Epoch: 1 | Step: 96100 | Avg. loss: 30.567
+Epoch: 1 | Step: 96200 | Avg. loss: 30.640
+Epoch: 1 | Step: 96300 | Avg. loss: 30.565
+Epoch: 1 | Step: 96400 | Avg. loss: 30.618
+Epoch: 1 | Step: 96500 | Avg. loss: 30.701
+No improvement in loss 25.384400780171685 over best loss 25.38006609467135. Not saving model checkpoint
+Epoch: 1 | Step: 96600 | Avg. loss: 30.709
+Epoch: 1 | Step: 96700 | Avg. loss: 30.493
+Epoch: 1 | Step: 96800 | Avg. loss: 30.577
+Epoch: 1 | Step: 96900 | Avg. loss: 30.493
+Epoch: 1 | Step: 97000 | Avg. loss: 30.572
+No improvement in loss 25.384808146124158 over best loss 25.38006609467135. Not saving model checkpoint
+Epoch: 1 | Step: 97100 | Avg. loss: 30.591
+Epoch: 1 | Step: 97200 | Avg. loss: 30.681
+Epoch: 1 | Step: 97300 | Avg. loss: 30.484
+Epoch: 1 | Step: 97400 | Avg. loss: 30.503
+Epoch: 1 | Step: 97500 | Avg. loss: 30.578
+No improvement in loss 25.384054634125462 over best loss 25.38006609467135. Not saving model checkpoint
+Epoch: 1 | Step: 97600 | Avg. loss: 30.620
+Epoch: 1 | Step: 97700 | Avg. loss: 30.606
+Epoch: 1 | Step: 97800 | Avg. loss: 30.580
+Epoch: 1 | Step: 97900 | Avg. loss: 30.746
+Epoch: 1 | Step: 98000 | Avg. loss: 30.681
+No improvement in loss 25.38523102066852 over best loss 25.38006609467135. Not saving model checkpoint
+Epoch: 1 | Step: 98100 | Avg. loss: 30.470
+Epoch: 1 | Step: 98200 | Avg. loss: 30.670
+Epoch: 1 | Step: 98300 | Avg. loss: 30.648
+Epoch: 1 | Step: 98400 | Avg. loss: 30.646
+Epoch: 1 | Step: 98500 | Avg. loss: 30.561
+No improvement in loss 25.38511582513786 over best loss 25.38006609467135. Not saving model checkpoint
+Epoch: 1 | Step: 98600 | Avg. loss: 30.472
+Epoch: 1 | Step: 98700 | Avg. loss: 30.498
+Epoch: 1 | Step: 98800 | Avg. loss: 30.577
+Epoch: 1 | Step: 98900 | Avg. loss: 30.615
+Epoch: 1 | Step: 99000 | Avg. loss: 30.543
+No improvement in loss 25.384731068942916 over best loss 25.38006609467135. Not saving model checkpoint
+Epoch: 1 | Step: 99100 | Avg. loss: 30.756
+Epoch: 1 | Step: 99200 | Avg. loss: 30.582
+Epoch: 1 | Step: 99300 | Avg. loss: 30.592
+Epoch: 1 | Step: 99400 | Avg. loss: 30.570
+Epoch: 1 | Step: 99500 | Avg. loss: 30.534
+No improvement in loss 25.383937239809544 over best loss 25.38006609467135. Not saving model checkpoint
+Epoch: 1 | Step: 99600 | Avg. loss: 30.460
+Epoch: 1 | Step: 99700 | Avg. loss: 30.625
+Epoch: 1 | Step: 99800 | Avg. loss: 30.517
+Epoch: 1 | Step: 99900 | Avg. loss: 30.595
+Epoch: 1 | Step: 100000 | Avg. loss: 30.686
+No improvement in loss 25.384942615503828 over best loss 25.38006609467135. Not saving model checkpoint
+Epoch: 1 | Step: 100100 | Avg. loss: 30.399
+Epoch: 1 | Step: 100200 | Avg. loss: 30.425
+Epoch: 1 | Step: 100300 | Avg. loss: 30.553
+Epoch: 1 | Step: 100400 | Avg. loss: 30.679
+Epoch: 1 | Step: 100500 | Avg. loss: 30.565
+No improvement in loss 25.38522832487973 over best loss 25.38006609467135. Not saving model checkpoint
+Epoch: 1 | Step: 100600 | Avg. loss: 30.691
+Epoch: 1 | Step: 100700 | Avg. loss: 30.534
+Epoch: 1 | Step: 100800 | Avg. loss: 30.569
+Epoch: 1 | Step: 100900 | Avg. loss: 30.563
+Epoch: 1 | Step: 101000 | Avg. loss: 30.628
+No improvement in loss 25.385167294927705 over best loss 25.38006609467135. Not saving model checkpoint
+Epoch: 1 | Step: 101100 | Avg. loss: 30.565
+Epoch: 1 | Step: 101200 | Avg. loss: 30.714
+Epoch: 1 | Step: 101300 | Avg. loss: 30.690
+Epoch: 1 | Step: 101400 | Avg. loss: 30.393
+Epoch: 1 | Step: 101500 | Avg. loss: 30.801
+No improvement in loss 25.384820404677242 over best loss 25.38006609467135. Not saving model checkpoint
+Epoch: 1 | Step: 101600 | Avg. loss: 30.428
+Epoch: 1 | Step: 101700 | Avg. loss: 30.525
+Epoch: 1 | Step: 101800 | Avg. loss: 30.548
+Epoch: 1 | Step: 101900 | Avg. loss: 30.637
+Epoch: 1 | Step: 102000 | Avg. loss: 30.509
+No improvement in loss 25.385210339076522 over best loss 25.38006609467135. Not saving model checkpoint
+Epoch: 1 | Step: 102100 | Avg. loss: 30.427
+Epoch: 1 | Step: 102200 | Avg. loss: 30.627
+Epoch: 1 | Step: 102300 | Avg. loss: 30.697
+Epoch: 1 | Step: 102400 | Avg. loss: 30.561
+Epoch: 1 | Step: 102500 | Avg. loss: 30.653
+No improvement in loss 25.38482523159636 over best loss 25.38006609467135. Not saving model checkpoint
+Epoch: 1 | Step: 102600 | Avg. loss: 30.477
+Epoch: 1 | Step: 102700 | Avg. loss: 30.585
+Epoch: 1 | Step: 102800 | Avg. loss: 30.613
+Epoch: 1 | Step: 102900 | Avg. loss: 30.599
+Epoch: 1 | Step: 103000 | Avg. loss: 30.589
+No improvement in loss 25.384645108148803 over best loss 25.38006609467135. Not saving model checkpoint
+Epoch: 1 | Step: 103100 | Avg. loss: 30.718
+Epoch: 1 | Step: 103200 | Avg. loss: 30.666
+Epoch: 1 | Step: 103300 | Avg. loss: 30.441
+Epoch: 1 | Step: 103400 | Avg. loss: 30.662
+Epoch: 1 | Step: 103500 | Avg. loss: 30.785
+No improvement in loss 25.385335875403182 over best loss 25.38006609467135. Not saving model checkpoint
+Epoch: 1 | Step: 103600 | Avg. loss: 30.748
+Epoch: 1 | Step: 103700 | Avg. loss: 30.577
+Epoch: 1 | Step: 103800 | Avg. loss: 30.564
+Epoch: 1 | Step: 103900 | Avg. loss: 30.631
+Epoch: 1 | Step: 104000 | Avg. loss: 30.669
+No improvement in loss 25.38449967606819 over best loss 25.38006609467135. Not saving model checkpoint
+Epoch: 1 | Step: 104100 | Avg. loss: 30.594
+Epoch: 1 | Step: 104200 | Avg. loss: 30.571
+Epoch: 1 | Step: 104300 | Avg. loss: 30.577
+Epoch: 1 | Step: 104400 | Avg. loss: 30.380
+Epoch: 1 | Step: 104500 | Avg. loss: 30.657
+No improvement in loss 25.384569134263355 over best loss 25.38006609467135. Not saving model checkpoint
+Epoch: 1 | Step: 104600 | Avg. loss: 30.631
+Epoch: 1 | Step: 104700 | Avg. loss: 30.552
+Epoch: 1 | Step: 104800 | Avg. loss: 30.516
+Epoch: 1 | Step: 104900 | Avg. loss: 30.747
+Epoch: 1 | Step: 105000 | Avg. loss: 30.560
+No improvement in loss 25.38526693502845 over best loss 25.38006609467135. Not saving model checkpoint
+Epoch: 1 | Step: 105100 | Avg. loss: 30.460
+Epoch: 1 | Step: 105200 | Avg. loss: 30.648
+Epoch: 1 | Step: 105300 | Avg. loss: 30.619
+Epoch: 1 | Step: 105400 | Avg. loss: 30.656
+Epoch: 1 | Step: 105500 | Avg. loss: 30.480
+No improvement in loss 25.385389848425476 over best loss 25.38006609467135. Not saving model checkpoint
+Epoch: 1 | Step: 105600 | Avg. loss: 30.507
+Epoch: 1 | Step: 105700 | Avg. loss: 30.630
+Epoch: 1 | Step: 105800 | Avg. loss: 30.625
+Epoch: 1 | Step: 105900 | Avg. loss: 30.555
+Epoch: 1 | Step: 106000 | Avg. loss: 30.704
+No improvement in loss 25.384690215773016 over best loss 25.38006609467135. Not saving model checkpoint
+Epoch: 1 | Step: 106100 | Avg. loss: 30.767
+Epoch: 1 | Step: 106200 | Avg. loss: 30.612
+Epoch: 1 | Step: 106300 | Avg. loss: 30.460
+Epoch: 1 | Step: 106400 | Avg. loss: 30.479
+Epoch: 1 | Step: 106500 | Avg. loss: 30.661
+No improvement in loss 25.383908881984986 over best loss 25.38006609467135. Not saving model checkpoint
+Epoch: 1 | Step: 106600 | Avg. loss: 30.491
+Epoch: 1 | Step: 106700 | Avg. loss: 30.539
+Epoch: 1 | Step: 106800 | Avg. loss: 30.745
+Epoch: 1 | Step: 106900 | Avg. loss: 30.560
+Epoch: 1 | Step: 107000 | Avg. loss: 30.656
+No improvement in loss 25.385134063345998 over best loss 25.38006609467135. Not saving model checkpoint
+Epoch: 1 | Step: 107100 | Avg. loss: 30.562
+Epoch: 1 | Step: 107200 | Avg. loss: 30.580
+Epoch: 1 | Step: 107300 | Avg. loss: 30.635
+Epoch: 1 | Step: 107400 | Avg. loss: 30.591
+Epoch: 1 | Step: 107500 | Avg. loss: 30.450
+No improvement in loss 25.385202316762967 over best loss 25.38006609467135. Not saving model checkpoint
+Epoch: 1 | Step: 107600 | Avg. loss: 30.530
+Epoch: 1 | Step: 107700 | Avg. loss: 30.644
+Epoch: 1 | Step: 107800 | Avg. loss: 30.621
+Epoch: 1 | Step: 107900 | Avg. loss: 30.622
+Epoch: 1 | Step: 108000 | Avg. loss: 30.554
+No improvement in loss 25.38481641303631 over best loss 25.38006609467135. Not saving model checkpoint
+Epoch: 1 | Step: 108100 | Avg. loss: 30.538
+Epoch: 1 | Step: 108200 | Avg. loss: 30.456
+Epoch: 1 | Step: 108300 | Avg. loss: 30.631
+Epoch: 1 | Step: 108400 | Avg. loss: 30.677
+Epoch: 1 | Step: 108500 | Avg. loss: 30.594
+No improvement in loss 25.385853935231292 over best loss 25.38006609467135. Not saving model checkpoint
+Epoch: 1 | Step: 108600 | Avg. loss: 30.561
+Epoch: 1 | Step: 108700 | Avg. loss: 30.530
+Epoch: 1 | Step: 108800 | Avg. loss: 30.528
+Epoch: 1 | Step: 108900 | Avg. loss: 30.693
+Epoch: 1 | Step: 109000 | Avg. loss: 30.633
+No improvement in loss 25.384669367645806 over best loss 25.38006609467135. Not saving model checkpoint
+Epoch: 1 | Step: 109100 | Avg. loss: 30.547
+Epoch: 1 | Step: 109200 | Avg. loss: 30.619
+Epoch: 1 | Step: 109300 | Avg. loss: 30.580
+Epoch: 1 | Step: 109400 | Avg. loss: 30.583
+Epoch: 1 | Step: 109500 | Avg. loss: 30.579
+No improvement in loss 25.386004990477517 over best loss 25.38006609467135. Not saving model checkpoint
+Epoch: 1 | Step: 109600 | Avg. loss: 30.628
+Epoch: 1 | Step: 109700 | Avg. loss: 30.700
+Epoch: 1 | Step: 109800 | Avg. loss: 30.736
+Epoch: 1 | Step: 109900 | Avg. loss: 30.826
+Epoch: 1 | Step: 110000 | Avg. loss: 30.631
+No improvement in loss 25.385163027462823 over best loss 25.38006609467135. Not saving model checkpoint
+Epoch: 1 | Step: 110100 | Avg. loss: 30.750
+Epoch: 1 | Step: 110200 | Avg. loss: 30.461
+Epoch: 1 | Step: 110300 | Avg. loss: 30.718
+Epoch: 1 | Step: 110400 | Avg. loss: 30.542
+Epoch: 1 | Step: 110500 | Avg. loss: 30.419
+No improvement in loss 25.38459983398937 over best loss 25.38006609467135. Not saving model checkpoint
+Epoch: 1 | Step: 110600 | Avg. loss: 30.540
+Epoch: 1 | Step: 110700 | Avg. loss: 30.563
+Epoch: 1 | Step: 110800 | Avg. loss: 30.676
+Epoch: 1 | Step: 110900 | Avg. loss: 30.650
+Epoch: 1 | Step: 111000 | Avg. loss: 30.706
+No improvement in loss 25.38403708807931 over best loss 25.38006609467135. Not saving model checkpoint
+Epoch: 1 | Step: 111100 | Avg. loss: 30.505
+Epoch: 1 | Step: 111200 | Avg. loss: 30.448
+Epoch: 1 | Step: 111300 | Avg. loss: 30.508
+Epoch: 1 | Step: 111400 | Avg. loss: 30.549
+Epoch: 1 | Step: 111500 | Avg. loss: 30.538
+No improvement in loss 25.384556079463778 over best loss 25.38006609467135. Not saving model checkpoint
+Epoch: 1 | Step: 111600 | Avg. loss: 30.595
+Epoch: 1 | Step: 111700 | Avg. loss: 30.679
+Epoch: 1 | Step: 111800 | Avg. loss: 30.553
+Epoch: 1 | Step: 111900 | Avg. loss: 30.692
+Epoch: 1 | Step: 112000 | Avg. loss: 30.585
+No improvement in loss 25.385688747910816 over best loss 25.38006609467135. Not saving model checkpoint
+Epoch: 1 | Step: 112100 | Avg. loss: 30.832
+Epoch: 1 | Step: 112200 | Avg. loss: 30.586
+Epoch: 1 | Step: 112300 | Avg. loss: 30.623
+Epoch: 1 | Step: 112400 | Avg. loss: 30.600
+Epoch: 1 | Step: 112500 | Avg. loss: 30.458
+No improvement in loss 25.385073832242583 over best loss 25.38006609467135. Not saving model checkpoint
+Epoch: 1 | Step: 112600 | Avg. loss: 30.515
+Epoch: 1 | Step: 112700 | Avg. loss: 30.499
+Epoch: 1 | Step: 112800 | Avg. loss: 30.810
+Epoch: 1 | Step: 112900 | Avg. loss: 30.516
+Epoch: 1 | Step: 113000 | Avg. loss: 30.708
+No improvement in loss 25.38457053159789 over best loss 25.38006609467135. Not saving model checkpoint
+Epoch: 1 | Step: 113100 | Avg. loss: 30.556
+Epoch: 1 | Step: 113200 | Avg. loss: 30.670
+Epoch: 1 | Step: 113300 | Avg. loss: 30.562
+Epoch: 1 | Step: 113400 | Avg. loss: 30.662
+Epoch: 1 | Step: 113500 | Avg. loss: 30.516
+No improvement in loss 25.38546955374058 over best loss 25.38006609467135. Not saving model checkpoint
