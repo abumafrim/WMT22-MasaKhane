@@ -102,17 +102,14 @@ class Config():
             'lug':'<lug>',
             'yor':'<yor>',
             'tsn':'<tsn>',
-            'swa':'<swa>',
+            'swh':'<swh>',
             'zul':'<zul>',
-            'fr':'<fra>',
             'fra':'<fra>',
             'wol':'<wol>'
         }
 
-        self.LANG_DICT = {'eng': ['hau', 'ibo', 'lug', 'swa', 'tsn', 'yor', 'zul'],
-                          'en': ['hau', 'ibo', 'lug', 'swa', 'tsn', 'yor', 'zul'],
-                             'fr': ['wol'],
-                             'fra':['wol']
+        self.LANG_DICT = {'eng': ['hau', 'ibo', 'lug', 'swh', 'tsn', 'yor', 'zul'],
+                          'fra':['wol']
                                 }
 
         self.LANG_MAPPING = [f"{src}-{tgt}" for src in list(self.LANG_DICT.keys()) for tgt in self.LANG_DICT[src]]
@@ -614,7 +611,8 @@ def train(config,n_epochs,optimizer,tokenizer,train_dataset,dev_dataset,model,sa
   
 def main(args):
     if not os.path.exists(args.homepath):
-        raise Exception(f'HOMEPATH {args.homepath} does not exist!')
+        os.makedirs(args.homepath,exist_ok=True)
+        #raise Exception(f'HOMEPATH {args.homepath} does not exist!')
     config = Config(args)
     if not os.path.exists(config.prediction_path):
         os.makedirs(config.prediction_path)
@@ -686,7 +684,7 @@ def main(args):
     optimizer = Adafactor(model.parameters(), scale_parameter=False, relative_step=False, warmup_init=False, lr=config.lr)
 
   
-    #train(config,config.n_epochs,optimizer,tokenizer,train_dataset,dev_dataset,model)
+    train(config,config.n_epochs,optimizer,tokenizer,train_dataset,dev_dataset,model)
     if config.verbose:
         with open(config.log,'a+') as fl:
             print('Evaluaton...',file=fl)
@@ -835,10 +833,10 @@ if __name__=="__main__":
     parser.add_argument('--num_backtranslation_steps', type=int, default=5,
     help='number of pretrain steps. (default: %(default)s)') 
 
-    parser.add_argument('--do_backtranslation', type=bool, default=True,
+    parser.add_argument('--do_backtranslation', type=bool, default=False,
     help='whether or not to do backtranslation during training. (default: %(default)s)')
 
-    parser.add_argument('--use_reconstruction', type=bool, default=True,
+    parser.add_argument('--use_reconstruction', type=bool, default=False,
     help='whether or not to use reconstruction during training. (default: %(default)s)')
 
     parser.add_argument('--use_torch_data_parallel', type=bool, default=False,
