@@ -3,3 +3,4 @@ slurm*
 
 mmtafrica/*
 !mmtafrica/mmtafrica.py
+!mmtafrica/eval.py
