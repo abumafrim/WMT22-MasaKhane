@@ -1,6 +1,6 @@
 model="albert-large-v2"
 
-for lang in eng-hau,eng-ibo,eng-lug,eng-swh,eng-tsn,eng-yor,eng-zul,fra-wol; do
+for lang in eng-hau eng-ibo eng-lug eng-swh eng-tsn eng-yor eng-zul fra-wol; do
     train=data/$lang/spc-$lang"_train.tsv"
     dev=data/$lang/spc-$lang"_dev.tsv"
     test=data/$lang/spc-$lang"_test.tsv"
