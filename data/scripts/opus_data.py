@@ -66,7 +66,7 @@ for src_lang, sources in data.items():
     for index, details in sources.items():
 
         raw_path = 'raw/' + index + '/'
-        processed_path = 'processed' + index + '/'
+        processed_path = 'processed/' + index + '/'
 
         if not os.path.exists(raw_path):
             print("Creating {0}...".format(raw_path))
