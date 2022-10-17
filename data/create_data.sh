@@ -25,8 +25,8 @@ echo "Preparing datasets"
 
 pip install -r ../requirements.txt
 
-python scripts/mafand.py
+#python scripts/mafand.py
 python scripts/wmt22_african.py
-python scripts/opus_data.py
-python scripts/webcrawl_african.py
+#python scripts/opus_data.py
+#python scripts/webcrawl_african.py
 python scripts/lava.py

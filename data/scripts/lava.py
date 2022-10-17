@@ -15,6 +15,10 @@ if not os.path.exists(raw_path):
     print("Creating {0}...".format(raw_path))
     os.makedirs(raw_path)
 
+if not os.path.exists(processed_path):
+    print("Creating {0}...".format(processed_path))
+    os.makedirs(processed_path)
+
 url = 'https://drive.google.com/uc?id=1iNlEJuJWQZp5ZmKWMfO89lDwHolHty6_'
 fname = raw_path + 'wmt22_lava_corpus_v1.zip'
 
