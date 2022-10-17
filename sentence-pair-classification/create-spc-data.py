@@ -17,20 +17,26 @@ for lang in langs:
   #read mafand as positive examples
   with open(maf_path + 'train.' + lang + '.' + lang.split('-')[0], 'r') as f:
     src = f.readlines()
+    src = [x.strip() for x in src]
   with open(maf_path + 'train.' + lang + '.' + lang.split('-')[0], 'r') as f:
     tgt = f.readlines()
+    tgt = [x.strip() for x in tgt]
   train_df = pd.DataFrame({'sentence1': src, 'sentence2': tgt, 'label': [1] * len(src)})
 
   with open(maf_path + 'test.' + lang + '.' + lang.split('-')[0], 'r') as f:
     src = f.readlines()
+    src = [x.strip() for x in src]
   with open(maf_path + 'test.' + lang + '.' + lang.split('-')[0], 'r') as f:
     tgt = f.readlines()
+    tgt = [x.strip() for x in tgt]
   test_df = pd.DataFrame({'sentence1': src, 'sentence2': tgt, 'label': [1] * len(src)})
 
   with open(maf_path + 'dev.' + lang + '.' + lang.split('-')[0], 'r') as f:
     src = f.readlines()
+    src = [x.strip() for x in src]
   with open(maf_path + 'dev.' + lang + '.' + lang.split('-')[0], 'r') as f:
     tgt = f.readlines()
+    tgt = [x.strip() for x in tgt]
   dev_df = pd.DataFrame({'sentence1': src, 'sentence2': tgt, 'label': [1] * len(src)})
   
   #sample huggingface worst laser scores as negative examples
