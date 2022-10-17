@@ -18,8 +18,6 @@ if not os.path.exists(processed_path):
   print("Creating {0}...".format(processed_path))
   os.makedirs(processed_path)
 
-os.chdir(raw_path)
-
 for lang in hug_langs:
 
   src = []
