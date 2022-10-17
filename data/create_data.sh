@@ -23,6 +23,8 @@ cd $datadir
 
 echo "Preparing datasets"
 
-python mafand.py
-python wmt22_african.py
-python opus_data.py
+python scripts/mafand.py
+python scripts/wmt22_african.py
+python scripts/opus_data.py
+python scripts/webcrawl_african.py
+python scripts/lava.py
