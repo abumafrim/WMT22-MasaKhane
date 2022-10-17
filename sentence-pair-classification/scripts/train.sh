@@ -8,7 +8,7 @@ for lang in eng-hau eng-ibo eng-lug eng-swh eng-tsn eng-yor eng-zul fra-wol; do
     model_path=models/$model/$lang
     mkdir -p $model_path
 
-    python run-sp-class.py \
+    python scripts/run-sp-class.py \
         --train \
         --eval=True \
         --model=$model \
