@@ -1,5 +1,6 @@
 import os
 import gzip
+import shutil
 import requests
 
 raw_path = 'raw/wmt22_african/'
@@ -24,15 +25,19 @@ for lang in hug_langs:
     
   url = 'https://huggingface.co/datasets/allenai/wmt22_african/resolve/main/wmt22_african_' + lang + '.gz'
   r = requests.get(url, allow_redirects=True)
-  fname = raw_path + lang + '.gz'
+  fname = raw_path + lang
   
   open(fname, 'wb').write(r.content)
+  with gzip.open(fname + '.gz', 'rb') as f_in:
+    with open(fname, 'wb') as f_out:
+      shutil.copyfileobj(f_in, f_out)
+
   with gzip.open(fname, 'rb') as f:
     lines = f.readlines()
 
   for line in lines:
-    src.append(line.split('\t')[0].strip() + '\n')
-    tgt.append(line.split('\t')[1].strip() + '\n')
+    src.append(str(line.split('\t')[0]).strip() + '\n')
+    tgt.append(str(line.split('\t')[1]).strip() + '\n')
 
   with open(processed_path + d_type + '.' + lang + '.' + lang.split('-')[0], 'w') as f:
     f.writelines(src)
