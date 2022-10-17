@@ -12,13 +12,26 @@ if not os.path.exists(processed_path):
 src_tgt = {'eng': ['hau', 'ibo', 'lug', 'swa', 'tsn', 'yor', 'zul'],'fra': ['wol']}
 d_types = ['dev', 'test', 'train']
 
+lcode = {
+          'eng': 'en',
+          'fra': 'fr',
+          'hau': 'hau',
+          'ibo': 'ibo',
+          'lug': 'lug',
+          'swa': 'swh',
+          'tsn': 'tsn',
+          'yor': 'yor',
+          'wol': 'wol',
+          'zul': 'zul'
+        }
+
 for src_lang, tgt in src_tgt.items():
   for tgt_lang in tgt:
     for d_type in d_types:
-      with open(data_path + src_lang + '_' + tgt_lang + '_news/' + d_type + '.' + src_lang, 'r') as f:
+      with open(data_path + lcode.get(src_lang) + '-' + lcode.get(tgt_lang) + '/' + d_type + '.' + lcode.get(src_lang), 'r') as f:
         src = f.readlines()
 
-      with open(data_path + src_lang + '_' + tgt_lang + '_news/' + d_type + '.' + tgt_lang, 'r') as f:
+      with open(data_path + lcode.get(src_lang) + '-' + lcode.get(tgt_lang) + '/' + d_type + '.' + lcode.get(tgt_lang), 'r') as f:
         tgt = f.readlines()
 
       src = [x.strip() for x in src]
