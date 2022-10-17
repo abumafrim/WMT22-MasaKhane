@@ -28,7 +28,7 @@ for lang in hug_langs:
   r = requests.get(url, allow_redirects=True)
   fname = raw_path + lang
   
-  open(fname, 'wb').write(r.content)
+  open(fname + '.gz', 'wb').write(r.content)
   with gzip.open(fname + '.gz', 'rb') as f_in:
     with open(fname, 'wb') as f_out:
       shutil.copyfileobj(f_in, f_out)
