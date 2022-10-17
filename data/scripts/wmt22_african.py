@@ -2,7 +2,6 @@ import os
 import gzip
 import shutil
 import requests
-import pandas as pd
 
 raw_path = 'raw/wmt22_african/'
 processed_path = 'processed/wmt22_african/'
@@ -33,12 +32,12 @@ for lang in hug_langs:
     with open(fname, 'wb') as f_out:
       shutil.copyfileobj(f_in, f_out)
 
-  df = pd.read_csv(fname, sep='\t', header=None, dtype=str)
+  with open(fname, 'r') as f:
+    lines = f.readlines()
 
-  src = list(df.columns[0])
-  src = [x.strip() + '\n' for x in src]
-  tgt = list(df.columns[1])
-  tgt = [x.strip() + '\n' for x in tgt]
+  for line in lines:
+    src.append(str(line.split('\t')[0]).strip() + '\n')
+    tgt.append(str(line.split('\t')[1]).strip() + '\n')
 
   with open(processed_path + d_type + '.' + lang + '.' + lang.split('-')[0], 'w') as f:
     f.writelines(src)
