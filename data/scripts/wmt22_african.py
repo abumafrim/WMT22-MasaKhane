@@ -1,5 +1,5 @@
-from sh import gunzip
 import os
+import gzip
 import requests
 
 base_path = '../../'
@@ -30,9 +30,7 @@ for lang in hug_langs:
   fname = raw_path + lang + '.gz'
   
   open(fname, 'wb').write(r.content)
-  gunzip(fname)
-
-  with open(raw_path + lang, 'r') as f:
+  with gzip.open(fname, 'rb') as f:
     lines = f.readlines()
 
   for line in lines:

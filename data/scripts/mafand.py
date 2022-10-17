@@ -9,7 +9,7 @@ if not os.path.exists(processed_path):
     print('Creating {0}...'.format(processed_path))
     os.makedirs(processed_path)
 
-src_tgt = {'eng': ['hau', 'ibo', 'lug', 'swa', 'tsn', 'yor', 'zul'],'fra': ['wol']}
+src_tgt = {'eng': ['hau', 'ibo', 'lug', 'swh', 'tsn', 'yor', 'zul'],'fra': ['wol']}
 d_types = ['dev', 'test', 'train']
 
 lcode = {
@@ -18,7 +18,7 @@ lcode = {
           'hau': 'hau',
           'ibo': 'ibo',
           'lug': 'lug',
-          'swa': 'swh',
+          'swh': 'swa',
           'tsn': 'tsn',
           'yor': 'yor',
           'wol': 'wol',
