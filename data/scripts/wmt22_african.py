@@ -2,7 +2,6 @@ import os
 import gzip
 import requests
 
-base_path = '../../'
 raw_path = 'raw/wmt22_african/'
 processed_path = 'processed/wmt22_african/'
 d_type = 'train'
@@ -35,12 +34,10 @@ for lang in hug_langs:
     src.append(line.split('\t')[0].strip() + '\n')
     tgt.append(line.split('\t')[1].strip() + '\n')
 
-  with open(base_path + processed_path + d_type + '.' + lang + '.' + lang.split('-')[0], 'w') as f:
+  with open(processed_path + d_type + '.' + lang + '.' + lang.split('-')[0], 'w') as f:
     f.writelines(src)
 
-  with open(base_path + processed_path + d_type + '.' + lang + '.' + lang.split('-')[1], 'w') as f:
+  with open(processed_path + d_type + '.' + lang + '.' + lang.split('-')[1], 'w') as f:
     f.writelines(tgt)
 
   print('Finished: ' + lang)
-
-os.chdir(base_path)
