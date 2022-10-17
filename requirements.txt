@@ -14,4 +14,3 @@ GPUtil
 argparse
 scipy
 sklearn
-sh

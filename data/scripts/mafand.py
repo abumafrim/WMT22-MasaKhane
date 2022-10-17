@@ -34,8 +34,8 @@ for src_lang, tgt in src_tgt.items():
       with open(data_path + lcode.get(src_lang) + '-' + lcode.get(tgt_lang) + '/' + d_type + '.' + lcode.get(tgt_lang), 'r') as f:
         tgt = f.readlines()
 
-      src = [x.strip() for x in src]
-      tgt = [x.strip() for x in tgt]
+      src = [x.strip() + '\n' for x in src]
+      tgt = [x.strip() + '\n' for x in tgt]
 
       with open(processed_path + d_type + '.' + src_lang + '-' + tgt_lang + '.' + src_lang, 'w') as f:
         f.writelines(src)

@@ -93,8 +93,8 @@ for src_lang, sources in data.items():
             with open(raw_path + index + '.' + src_lang + '-' + tgt_lang + '.' + tgt_lang) as f:
                 tgt_lines = f.readlines()
 
-            src_lines = [x.strip() for x in src_lines]
-            tgt_lines = [x.strip() for x in tgt_lines]
+            src_lines = [x.strip() + '\n' for x in src_lines]
+            tgt_lines = [x.strip() + '\n' for x in tgt_lines]
 
             with open(processed_path + d_type + '.' + lang_code_map.get(src_lang) + '-' + lang_code_map.get(tgt_lang) + '.' + lang_code_map.get(src_lang), 'w') as f:
                 f.writelines(src_lines)

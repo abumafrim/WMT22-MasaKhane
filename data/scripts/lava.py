@@ -44,8 +44,8 @@ try:
         s_t = []
         t_t = []
         for value in values:
-            s_t.append(value[0])
-            t_t.append(value[1])
+            s_t.append(value[0].strip() + '\n')
+            t_t.append(value[1].strip() + '\n')
 
         with open(processed_path + d_type + '.' + key + '.' + key.split('-')[0], 'w') as f:
             f.writelines(s_t)

@@ -34,8 +34,8 @@ for lang in hug_langs:
     lines = f.readlines()
 
   for line in lines:
-    src.append(line.split('\t')[0])
-    tgt.append(line.split('\t')[1])
+    src.append(line.split('\t')[0].strip() + '\n')
+    tgt.append(line.split('\t')[1].strip() + '\n')
 
   with open(base_path + processed_path + d_type + '.' + lang + '.' + lang.split('-')[0], 'w') as f:
     f.writelines(src)
