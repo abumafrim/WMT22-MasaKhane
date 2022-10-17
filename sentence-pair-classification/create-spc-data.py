@@ -15,21 +15,21 @@ for lang in langs:
     os.makedirs(path)
 
   #read mafand as positive examples
-  with open(maf_path + 'train.' + lang + lang.split('-')[0], 'r') as f:
+  with open(maf_path + 'train.' + lang + '.' + lang.split('-')[0], 'r') as f:
     src = f.readlines()
-  with open(maf_path + 'train.' + lang + lang.split('-')[0], 'r') as f:
+  with open(maf_path + 'train.' + lang + '.' + lang.split('-')[0], 'r') as f:
     tgt = f.readlines()
   train_df = pd.DataFrame({'sentence1': src, 'sentence2': tgt, 'label': [1] * len(src)})
 
-  with open(maf_path + 'test.' + lang + lang.split('-')[0], 'r') as f:
+  with open(maf_path + 'test.' + lang + '.' + lang.split('-')[0], 'r') as f:
     src = f.readlines()
-  with open(maf_path + 'test.' + lang + lang.split('-')[0], 'r') as f:
+  with open(maf_path + 'test.' + lang + '.' + lang.split('-')[0], 'r') as f:
     tgt = f.readlines()
   test_df = pd.DataFrame({'sentence1': src, 'sentence2': tgt, 'label': [1] * len(src)})
 
-  with open(maf_path + 'dev.' + lang + lang.split('-')[0], 'r') as f:
+  with open(maf_path + 'dev.' + lang + '.' + lang.split('-')[0], 'r') as f:
     src = f.readlines()
-  with open(maf_path + 'dev.' + lang + lang.split('-')[0], 'r') as f:
+  with open(maf_path + 'dev.' + lang + '.' + lang.split('-')[0], 'r') as f:
     tgt = f.readlines()
   dev_df = pd.DataFrame({'sentence1': src, 'sentence2': tgt, 'label': [1] * len(src)})
   
