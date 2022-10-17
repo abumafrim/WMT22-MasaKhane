@@ -1,14 +1,6 @@
-# -*- coding: utf-8 -*-
-"""Fine_tune_ALBERT_sentence_pair_classification.ipynb
-
-## Installation of libraries and imports
-"""
-
 import torch
 import torch.nn as nn
-import matplotlib.pyplot as plt
 import copy
-import torch.optim as optim
 import random
 import numpy as np
 import pandas as pd
@@ -16,22 +8,18 @@ import psutil
 import humanize
 import os
 import GPUtil as GPU
-import glob
 
 from torch.utils.data import DataLoader, Dataset
 from torch.cuda.amp import autocast, GradScaler
 from tqdm import tqdm
 from transformers import AutoTokenizer, AutoModel, AdamW, get_linear_schedule_with_warmup
-from datasets import load_dataset, load_metric
+from datasets import load_metric
 
 from argparse import ArgumentParser, ArgumentDefaultsHelpFormatter, ArgumentTypeError
 import warnings
 warnings.simplefilter("ignore")
 
 os.environ["TOKENIZERS_PARALLELISM"] = "false"
-
-# Check that we are using 100% of GPU memory footprint support libraries/code
-# from https://github.com/patrickvonplaten/notebooks/blob/master/PyTorch_Reformer.ipynb
 
 os.system("ln -sf /opt/bin/nvidia-smi /usr/bin/nvidia-smi")
 
@@ -178,9 +166,6 @@ def train_bert(model_path, net, criterion, opti, lr, lr_scheduler, train_loader,
     best_ep = 1
     nb_iterations = len(train_loader)
     print_every = nb_iterations // 5  # print the training loss 5 times per epoch
-    iters = []
-    train_losses = []
-    val_losses = []
 
     scaler = GradScaler()
 
@@ -363,19 +348,7 @@ if __name__ == "__main__":
 
   """You can download the model saved in the folder "models" by browsing the files on the left of the colab notebook"""
 
-  # If you encounter a CUDA out of memory error: 
-  # - uncomment the kill command, run the "kill" command (and comment it)
-  # - reduce the batch size
-  # - then run all cells from the begining 
-
-  # If you get an ugly print of tqdm (all iterations are showed), follow the above first and last steps
-
-  # printm()
-  # !kill -9 -1
-
   if args.eval:
-
-    # path_to_model = 'models/albert-base-v2_lr_2e-05_val_loss_0.15311_ep_1.pt'
 
     path_to_output_file = os.path.join(args.model_path, args.model + '_test_predictions.txt')
 
