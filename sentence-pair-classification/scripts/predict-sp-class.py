@@ -184,7 +184,7 @@ if __name__ == "__main__":
   parser.add_argument("--model", type=str, default='albert-base-v2', help="model to finetune: 'albert-base-v2', 'albert-large-v2', 'albert-xlarge-v2', 'albert-xxlarge-v2', 'bert-base-uncased', ...")
   parser.add_argument("--model_path", type=str, required=True,help="path to sp-class. model")
   parser.add_argument("--data_path", type=validate_datafile, help="path to sentence pairs to predict")
-  parser.add_argument("--output_file", type=validate_datafile, help="file to save predictions")
+  parser.add_argument("--output_file", type=str, help="file to save predictions")
   parser.add_argument("-f", "--freeze_bert", default=False, help="if True, freeze the encoder weights and only update the classification layer weights")
   parser.add_argument("-l", "--maxlen", type=int, default=128, help="maximum length of the tokenized input sentence pair: if greater than 'maxlen', the input is truncated and else if smaller, the input is padded")
   parser.add_argument("-b", "--batch_size", type=int, default=64, help="batch size")
