@@ -18,7 +18,7 @@ for data in wmt22_african lava-corpus webcrawl_african WikiMatrix CCAligned CCMa
         lang=${lang//.tsv}
 
         model_path=$modelspath/$model/$lang
-        for x in $model_path/*.pt; do
+        for x in $model_path/$model*.pt; do
             echo "$x"
             loss="$(cut -d'_' -f6 <<<"$x")"
             if [ "`echo "${loss} < $val_loss" | bc`" -eq 1 ]; then
