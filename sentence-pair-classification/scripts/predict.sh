@@ -2,7 +2,7 @@ model=albert-xlarge-v2
 basepath=../../data/filtering
 modelspath=../models
 #very large loss (arbitrary)
-valloss=1000
+val_loss=1000
 
 donefile=$basepath/$model"-done_pred.txt"
 if [ -f $donefile ]; then
@@ -16,7 +16,25 @@ for data in wmt22_african lava-corpus webcrawl_african WikiMatrix CCAligned CCMa
     if [[ ! " ${donepred[*]} " =~ " ${value} " ]]; then
         lang="$(cut -d'/' -f6 <<<"$sfile")"
         lang=${lang//.tsv}
-        echo "Predicting the quality of: $lang"
+
+        model_path=$modelspath/$model/$lang
+        for x in $model_path/*.pt; do
+            loss="$(cut -d'_' -f6 <<<"$x")"
+            if [ "`echo "${loss} < $val_loss" | bc`" -eq 1 ]; then
+                model_path=$model_path/$x
+            else
+                model_path=""
+            fi
+        done
+
+        data_to_classify=$datapath/$sfile
+        save_to=$datapath/$model"_"$lang".preds"
+
+        echo "$model_path"
+        echo "$data_to_classify"
+        echo "$save_to"
+
+        echo "$value finished."
 
     elif [[ " ${donepred[*]} " =~ " ${value} " ]]; then
 	    echo "$value finished."

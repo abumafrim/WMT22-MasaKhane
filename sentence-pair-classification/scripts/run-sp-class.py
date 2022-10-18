@@ -228,7 +228,7 @@ def train_bert(model_path, net, criterion, opti, lr, lr_scheduler, train_loader,
             best_ep = ep + 1
 
     # Saving the model
-    path_to_model=model_path + '/lr_{}_val_loss_{}_ep_{}.pt'.format(lr, round(best_loss, 5), best_ep)
+    path_to_model=model_path + '/{}_lr_{}_val_loss_{}_ep_{}.pt'.format(bert_model, lr, round(best_loss, 5), best_ep)
     torch.save(net_copy.state_dict(), path_to_model)
     print("The model has been saved in {}".format(path_to_model))
 
