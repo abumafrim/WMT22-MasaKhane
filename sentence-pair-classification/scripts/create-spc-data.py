@@ -35,3 +35,4 @@ for data in auto_aligned:
 
     df = pd.DataFrame({'sentence1': src, 'sentence2': tgt})
     df.to_csv(os.path.join(tgt_path, lang + '.tsv'), sep='\t', index=False)
+    print('Finished: {0}'.format(lang))
