@@ -29,6 +29,13 @@ for data in wmt22_african lava-corpus webcrawl_african WikiMatrix CCAligned CCMa
         data_to_classify=$sfile
         save_to=$datapath/$model"_"$lang".preds"
 
+        python3 predict-sp-class.py \
+            --predict \
+            --model=$model \
+            --model_path=$model_path \
+            --data_path=$data_to_classify \
+            --output_file=$save_to
+
         echo "Finished: $data $lang"
 
         echo $value >> $donefile
