@@ -7,6 +7,8 @@ langs = ['eng-hau', 'eng-ibo', 'eng-lug', 'eng-swh', 'eng-tsn', 'eng-yor', 'eng-
 
 data_columns = ['sentence1', 'sentence2']
 
+print('Creating training data')
+
 for lang in langs:
 
   path = 'data/' + lang
@@ -18,7 +20,7 @@ for lang in langs:
   with open(maf_path + 'train.' + lang + '.' + lang.split('-')[0], 'r') as f:
     src = f.readlines()
     src = [x.strip() for x in src]
-  with open(maf_path + 'train.' + lang + '.' + lang.split('-')[0], 'r') as f:
+  with open(maf_path + 'train.' + lang + '.' + lang.split('-')[1], 'r') as f:
     tgt = f.readlines()
     tgt = [x.strip() for x in tgt]
   train_df = pd.DataFrame({'sentence1': src, 'sentence2': tgt, 'label': [1] * len(src)})
@@ -26,7 +28,7 @@ for lang in langs:
   with open(maf_path + 'test.' + lang + '.' + lang.split('-')[0], 'r') as f:
     src = f.readlines()
     src = [x.strip() for x in src]
-  with open(maf_path + 'test.' + lang + '.' + lang.split('-')[0], 'r') as f:
+  with open(maf_path + 'test.' + lang + '.' + lang.split('-')[1], 'r') as f:
     tgt = f.readlines()
     tgt = [x.strip() for x in tgt]
   test_df = pd.DataFrame({'sentence1': src, 'sentence2': tgt, 'label': [1] * len(src)})
@@ -34,7 +36,7 @@ for lang in langs:
   with open(maf_path + 'dev.' + lang + '.' + lang.split('-')[0], 'r') as f:
     src = f.readlines()
     src = [x.strip() for x in src]
-  with open(maf_path + 'dev.' + lang + '.' + lang.split('-')[0], 'r') as f:
+  with open(maf_path + 'dev.' + lang + '.' + lang.split('-')[1], 'r') as f:
     tgt = f.readlines()
     tgt = [x.strip() for x in tgt]
   dev_df = pd.DataFrame({'sentence1': src, 'sentence2': tgt, 'label': [1] * len(src)})
@@ -70,3 +72,32 @@ for lang in langs:
   test_df.sample(frac=1).reset_index(drop=True).to_csv(os.path.join(path, 'spc-' + lang + '_test.tsv'), sep='\t', index=False)
 
   print('Finished: ' + lang)
+
+print('\nFormatting auto-aligned data for prediction')
+
+auto_aligned = ['wmt22_african', 'lava', 'webcrawl_african', 'WikiMatrix', 'CCAligned', 'CCMatrix', 'ParaCrawl', 'GNOME', 'KDE4', 'TED2020', 'XLEnt', 'Ubuntu', 'wikimedia', 'MultiCCAligned']
+
+for data in auto_aligned:
+  src_path = os.path.join('../data/processed/', data)
+  files = os.listdir(src_path)
+  langs = []
+
+  for f in files:
+    if f.startswith('train') and f[6:-4] not in langs:
+      langs.append(f[6:-4])
+
+  for lang in langs:
+    with open(src_path + 'train.' + lang + '.' + lang.split('-')[0], 'r') as f:
+      src = f.readlines()
+      src = [x.strip() for x in src]
+    with open(src_path + 'train.' + lang + '.' + lang.split('-')[1], 'r') as f:
+      tgt = f.readlines()
+      tgt = [x.strip() for x in tgt]
+
+    tgt_path = os.path.join('../data/filtering', data)
+    if not os.path.exists(tgt_path):
+      print("Creating {0}".format(tgt_path))
+      os.makedirs(tgt_path)
+
+    df = pd.DataFrame({'sentence1': src, 'sentence2': tgt})
+    df.to_csv(os.path.join(tgt_path, lang + '.tsv'), sep='\t', index=False)
