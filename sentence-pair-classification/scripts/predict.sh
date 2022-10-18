@@ -2,7 +2,7 @@ model=albert-xlarge-v2
 basepath=../../data/filtering
 modelspath=../models
 #very large loss (arbitrary)
-val_loss=1000
+val_loss=2.0
 
 donefile=$basepath/$model"-done_pred.txt"
 if [ -f $donefile ]; then
@@ -20,7 +20,7 @@ for data in wmt22_african lava-corpus webcrawl_african WikiMatrix CCAligned CCMa
         model_path=$modelspath/$model/$lang
         for x in $model_path/$model*.pt; do
             loss="$(cut -d'_' -f6 <<<"$x")"
-            if (( $(awk <<<"$loss < $val_loss") )); then
+            if awk "BEGIN {exit !($loss < $val_loss)}"; then
                 model_path=$model_path/$x
             else
                 model_path=""
