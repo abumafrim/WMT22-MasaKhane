@@ -21,7 +21,7 @@ for data in wmt22_african lava-corpus webcrawl_african WikiMatrix CCAligned CCMa
         for x in $model_path/$model*.pt; do
             loss="$(cut -d'_' -f6 <<<"$x")"
             if awk "BEGIN {exit !($loss < $val_loss)}"; then
-                model_path=$model_path/$x
+                model_path=$x
             else
                 model_path=""
             fi
