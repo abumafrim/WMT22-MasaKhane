@@ -11,10 +11,10 @@ fi
 
 for data in wmt22_african lava-corpus webcrawl_african WikiMatrix CCAligned CCMatrix ParaCrawl GNOME KDE4 TED2020 XLEnt Ubuntu wikimedia MultiCCAligned; do
   datapath=$basepath/$data
-  for sfile in $(ls -d $datapath); do
+  for sfile in $datapath/*.tsv; do
     value=$data$'\t'$sfile
     if [[ ! " ${donepred[*]} " =~ " ${value} " ]]; then
-        lang=${sfile// $basepath / }
+        lang=${sfile:0:7}
         echo "Predicting the quality of: $lang"
 
     elif [[ " ${donepred[*]} " =~ " ${value} " ]]; then
