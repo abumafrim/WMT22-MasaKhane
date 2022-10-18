@@ -27,7 +27,7 @@ for data in wmt22_african lava-corpus webcrawl_african WikiMatrix CCAligned CCMa
             fi
         done
 
-        data_to_classify=$datapath/$sfile
+        data_to_classify=$sfile
         save_to=$datapath/$model"_"$lang".preds"
 
         echo "$model_path"
