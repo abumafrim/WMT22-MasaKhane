@@ -14,8 +14,8 @@ for data in wmt22_african lava-corpus webcrawl_african WikiMatrix CCAligned CCMa
   for sfile in $datapath/*.tsv; do
     value=$data$'\t'$sfile
     if [[ ! " ${donepred[*]} " =~ " ${value} " ]]; then
-        lang=${sfile:0:7}
-        echo "Predicting the quality of: $sfile"
+        lang=${sfile//$basepath}
+        echo "Predicting the quality of: $lang"
 
     elif [[ " ${donepred[*]} " =~ " ${value} " ]]; then
 	    echo "$value finished."
