@@ -6,7 +6,9 @@ modelspath=../models
 #very large loss (arbitrary)
 valloss=1000
 
-filename=$basepath/$model'-done_pred.txt'
+cd $basepath
+
+filename=$model'-done_pred.txt'
 IFS=$'\r\n' GLOBIGNORE='*' command eval 'donepred=($(cat filename))'
-echo "$filename"
+
 echo ${donepred[@]}
