@@ -6,10 +6,9 @@ maf_path = '../data/processed/mafand_mt/'
 langs = ['eng-hau', 'eng-ibo', 'eng-lug', 'eng-swh', 'eng-tsn', 'eng-yor', 'eng-zul', 'fra-wol']
 
 
-
 print('\nFormatting auto-aligned data for prediction')
 
-auto_aligned = ['wmt22_african', 'lava', 'webcrawl_african', 'WikiMatrix', 'CCAligned', 'CCMatrix', 'ParaCrawl', 'GNOME', 'KDE4', 'TED2020', 'XLEnt', 'Ubuntu', 'wikimedia', 'MultiCCAligned']
+auto_aligned = ['lava-corpus', 'webcrawl_african', 'WikiMatrix', 'CCAligned', 'CCMatrix', 'ParaCrawl', 'GNOME', 'KDE4', 'TED2020', 'XLEnt', 'Ubuntu', 'wikimedia', 'MultiCCAligned']
 
 for data in auto_aligned:
   src_path = os.path.join('../data/processed/', data)
