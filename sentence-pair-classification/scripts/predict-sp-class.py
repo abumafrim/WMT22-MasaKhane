@@ -213,14 +213,17 @@ if __name__ == "__main__":
 
   device = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
 
+  print()
+  print("Loading the weights of the model...")
   model = SentencePairClassifier(bert_model)
   if torch.cuda.device_count() > 1:  # if multiple GPUs
       print("Let's use", torch.cuda.device_count(), "GPUs!")
       model = nn.DataParallel(model)
+      model.load_state_dict(torch.load(path_to_model))
 
-  print()
-  print("Loading the weights of the model...")
-  model.load_state_dict(torch.load(path_to_model))
+  else:
+    model.load_state_dict(torch.load(path_to_model, map_location=torch.device('cpu')))
+  
   model.to(device)
 
   print("Predicting quality of parallel data...")
