@@ -192,9 +192,8 @@ if __name__ == "__main__":
       
   args = parser.parse_args()
 
-  if not os.path.exists(args.output_path):
-    print("Creation of the prediction ouput folder...")
-    os.system("mkdir " + args.output_path)
+  if not os.path.exists(args.output_file):
+    os.makedirs(os.path.dirname(args.output_file), exist_ok=True)
 
   bert_model = args.model
   maxlen = args.maxlen
