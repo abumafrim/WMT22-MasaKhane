@@ -30,11 +30,9 @@ for data in wmt22_african lava-corpus webcrawl_african WikiMatrix CCAligned CCMa
         data_to_classify=$sfile
         save_to=$datapath/$model"_"$lang".preds"
 
-        echo "$model_path"
-        echo "$data_to_classify"
-        echo "$save_to"
-
         echo "Finished: $data $lang"
+
+        echo $value >> $donefile
 
     elif [[ " ${donepred[*]} " =~ " ${value} " ]]; then
 	    echo "Finished: $data $lang"
