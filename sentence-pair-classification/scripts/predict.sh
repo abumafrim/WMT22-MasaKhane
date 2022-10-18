@@ -8,7 +8,7 @@ valloss=1000
 
 filename=$basepath/$model"-done_pred.txt"
 readarray -t donepred < $filename
-value="wmt22_african\teng-hau.tsv"
+value=wmt22_african'\t'eng-hau.tsv
 
 if [[ " ${donepred[*]} " =~ " ${value} " ]]; then
     echo "Finished: $filename"
