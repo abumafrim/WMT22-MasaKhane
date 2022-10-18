@@ -10,3 +10,5 @@ filename=$base_path/$model'-done_pred.txt'
 IFS=$'\r\n' GLOBIGNORE='*' command eval  'done_pred=($(cat filename))'
 
 echo ${done_pred[@]}
+
+echo "$filename"
