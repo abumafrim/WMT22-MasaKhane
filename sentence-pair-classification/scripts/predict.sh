@@ -12,5 +12,6 @@ fi
 value=webcrawl_african$'\t'eng-hau
 
 if [[ ! " ${donepred[*]} " =~ " ${value} " ]]; then
+    echo "$value"
     echo "Not found"
 fi
