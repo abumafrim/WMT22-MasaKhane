@@ -21,6 +21,7 @@ for data in wmt22_african lava-corpus webcrawl_african WikiMatrix CCAligned CCMa
         for x in $model_path/$model*.pt; do
             echo "$x"
             loss="$(cut -d'_' -f6 <<<"$x")"
+            echo "$loss"
             if [ "`echo "${loss} < $val_loss" | bc`" -eq 1 ]; then
                 model_path=$model_path/$x
             else
@@ -35,10 +36,10 @@ for data in wmt22_african lava-corpus webcrawl_african WikiMatrix CCAligned CCMa
         echo "$data_to_classify"
         echo "$save_to"
 
-        echo "$data $lang finished."
+        echo "Finished: $data $lang"
 
     elif [[ " ${donepred[*]} " =~ " ${value} " ]]; then
-	    echo "$data $lang finished."
+	    echo "Finished: $data $lang"
     fi
   done
   echo ''
