@@ -12,11 +12,10 @@ fi
 for data in wmt22_african lava-corpus webcrawl_african WikiMatrix CCAligned CCMatrix ParaCrawl GNOME KDE4 TED2020 XLEnt Ubuntu wikimedia MultiCCAligned; do
   datapath=$basepath/$data
   for sfile in $datapath/*.tsv; do
-    value=$data$'\t'$sfile
+    lang="$(cut -d'/' -f6 <<<"$sfile")"
+    lang=${lang//.tsv}
+    value=$data$'\t'$lang
     if [[ ! " ${donepred[*]} " =~ " ${value} " ]]; then
-        lang="$(cut -d'/' -f6 <<<"$sfile")"
-        lang=${lang//.tsv}
-
         model_path=$modelspath/$model/$lang
         for x in $model_path/$model*.pt; do
             loss="$(cut -d'_' -f6 <<<"$x")"
