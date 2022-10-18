@@ -9,7 +9,7 @@ if [ -f $donefile ]; then
     readarray -t donepred < $donefile
 fi
 
-value=webcrawl_african$'\t'eng-hau
+value=webcrawl_african'\t'eng-hau
 
 if [[ ! " ${donepred[*]} " =~ " ${value} " ]]; then
     echo "$value"
